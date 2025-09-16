@@ -9,7 +9,7 @@ google_analytics_id: UA-215543768-1
 show_excerpts: false # set to true to show excerpts on the homepage
 permalink: /:title
 
-url: "https://allison.io" # the base hostname & protocol for your site
+url: "https://allimorgan98-cloud.github.io/portfolio"# the base hostname & protocol for your site
 
 plugins:
  - jekyll-feed
