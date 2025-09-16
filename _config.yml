@@ -1,18 +1,12 @@
-title: Allison Morgan
-author:
-  name: Allison Morgan
-  email: allimorgan98@gmail.com
-description: >
-  UX researcher | 
-
-
-show_excerpts: false # set to true to show excerpts on the homepage
-permalink: /:title
-
-
 url: "https://allimorgan98-cloud.github.io"
-baseurl: "/portfolio"
+baseurl: "/portfolio"   # because your repo name is 'portfolio'
 
+title: "Allison Morgan"
+description: "UX / HMI Researcher"
+author:
+  name: "Allison Morgan"
+  email: "allimorgan98@gmail.com"
+  url: "https://allimorgan98-cloud.github.io/portfolio"
 
 plugins:
  - jekyll-feed
