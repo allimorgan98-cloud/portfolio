@@ -7,7 +7,7 @@ authors:
   - Jean Costa
   - Allison Morgan
   - Hiroshi Yasuda
-  - Eli Sumner
+  - Emily Sumner
   - Deepak Gopinath
   - Sheryl Chau
   - Hieu Nguyen
