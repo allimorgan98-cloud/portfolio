@@ -4,7 +4,7 @@ title: "Task Decomposition for Learning Advanced Driving Skills"
 year: 2025
 month: 7
 authors:
-  - Joshua Dallas
+  - James Dallas
   - Allison Morgan
   - Hiroshi Yasuda
   - Michael Thompson
