@@ -16,5 +16,6 @@ plugins:
 collections:
   publication:
     output: true
+    permalink: /publication/:slug/
 
 theme: minima
