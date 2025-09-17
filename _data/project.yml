@@ -18,7 +18,7 @@ project:
     id: conversational-coach
 
   - title: Computational Teaching via Multi-Task Imitation Learning
-    image: icra-mtil.jpg
+    image: icra-mtil.png
     detail: >
       <p>Built reliable <b>capture and evaluation pipelines</b> supporting multi-task imitation learning for driving skills. Standardized time-sync across simulator I/O, eye-tracking, and physio; defined user-centered success metrics in partnership with engineering.</p>
 
@@ -54,7 +54,7 @@ project:
     id: acc-task-decomposition
 
   - title: Gliding on Simulated Ice — Low-μ Drift Training
-    image: low-mu-drift.jpg
+    image: low-mu-drift.png
     detail: >
       <p>Evaluated simulated low-friction (<b>low-μ</b>) environments for drift training; analyzed learning and transfer in a controlled simulator study and informed HMI safety cues.</p>
 
@@ -72,7 +72,7 @@ project:
     id: low-mu-drift
 
   - title: Personalizing Driver Safety Interfaces
-    image: cognitive-factors.jpg
+    image: cognitive-factors.png
     detail: >
       <p>Linked inferred <b>cognitive factors</b> to driving outcomes to personalize safety HMI. Contributed to mixed-methods analysis and measurable interface recommendations.</p>
 
@@ -90,7 +90,7 @@ project:
     id: sci-rep-cognitive-factors
 
   - title: HMIway-env — Human–AI Teaming Simulation
-    image: hmiway-env.jpg
+    image: hmiway-env.png
     detail: >
       <p>Simulation framework modeling <b>driver behaviors and preferences</b> to test human–AI teaming strategies and HMI interventions.</p>
 
@@ -126,7 +126,7 @@ project:
     id: hri-skill-representation
 
   - title: MeTime — Personalized Streaming Discovery
-    image: metime-cover.jpg
+    image: metime-cover.png
     detail: >
       <p>UCSD app concept to <b>cut time-to-decision</b> for busy streamers. Designed flows and hi-fi prototype with Karam: <b>Taste Curation</b> (quick preference quiz), <b>Randomizer</b> (one-tap play), <b>Tags search</b>, and <b>Saved-content filter</b>.</p>
 
