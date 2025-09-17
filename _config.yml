@@ -1,5 +1,5 @@
 url: "https://allimorgan98-cloud.github.io"
-#baseurl: "/portfolio"   # because your repo name is 'portfolio'
+baseurl: "/portfolio"   # because your repo name is 'portfolio'
 
 title: "Allison Morgan"
 description: "UX / HMI Researcher"
