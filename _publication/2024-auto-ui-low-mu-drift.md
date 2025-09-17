@@ -20,4 +20,5 @@ abstract: Drifting, a skillful driving technique involving intentional traction 
   - "Simulation"
   - "Automotive"
 featured: false
+pdf: /assets/pdf/gliding_ice.pdf
 ---
