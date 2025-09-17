@@ -5,7 +5,7 @@ project:
     slug: conversational-coach
 
   - title: "Computational Teaching via Multi-Task Imitation Learning"
-    image: "icra-mtil.jpg"
+    image: "icra-mtil.png"
     venue: ICRA '25
     slug: icra-mtil
 
@@ -15,17 +15,17 @@ project:
     slug: acc-task-decomposition
 
   - title: "Gliding on Simulated Ice: Low-μ Drift Training"
-    image: "low-mu-drift.jpg"
+    image: "low-mu-drift.png"
     venue: AutomotiveUI '24
     slug: low-mu-drift
 
   - title: "Personalizing Driver Safety Interfaces"
-    image: "cognitive-factors.jpg"
+    image: "cognitive-factors.png"
     venue: Scientific Reports '24
     slug: sci-rep-cognitive-factors
 
   - title: "HMIway-env: Human–AI Teaming Simulation"
-    image: "hmiway-env.jpg"
+    image: "hmiway-env.png"
     venue: CVPR '22
     slug: hmiway-env
 
@@ -35,6 +35,6 @@ project:
     slug: hri-skill-representation
 
 - title: "MeTime — Personalized Streaming Discovery"
-    image: "metime-cover.jpg"     # put this image in the same folder your other project images live in
+    image: "metime-cover.png"     # put this image in the same folder your other project images live in
     venue: UCSD • 2021
     slug: metime
