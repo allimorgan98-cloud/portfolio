@@ -3,7 +3,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <title>{% if page.url == "/" %}{{ page.title }}{% else %}{{ page.title }} | Donghoon Shin{% endif %}</title>
+  <title>{% if page.url == "/" %}{{ page.title }}{% else %}{{ page.title }} | Allison Morgan{% endif %}</title>
 
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/home.css' | relative_url }}">
@@ -51,7 +51,7 @@
 
   <!-- Opengraph -->
   <meta property="og:type" content="website">
-  <meta property="og:image" content="{% if page.slug %}{{ '/assets/images/publication/' | append: page.slug | append: '.jpg' | relative_url }}{% else %}{{ '/assets/images/main/opengraph.jpg' | relative_url }}{% endif %}">
+  <meta property="og:image" content="{% if page.slug %}{{ '/assets/images/publication/' | append: page.slug | append: '.png' | relative_url }}{% else %}{{ '/assets/images/main/opengraph.jpg' | relative_url }}{% endif %}">
   <meta property="og:title" content="{% if page.url == '/' %}{{ page.title }}{% else %}{{ page.title }} | Donghoon Shin{% endif %}">
   <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}Paper overview of {{ page.authors.first | split: ' ' | last }} et al., {{ page.year }}{% endif %}">
 
