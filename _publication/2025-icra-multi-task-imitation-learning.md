@@ -23,4 +23,5 @@ category:
   - "Imitation Learning"
   - "Automotive"
 featured: false
+pdf: assets/pdf/computation_teaching.pdf
 ---
