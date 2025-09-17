@@ -1,6 +1,6 @@
 project:
   - title: Conversational AI Coach for Performance Driving
-    image: conversational-coach.jpg
+    image: conversational-coach.png
     detail: >
       <p>Mixed-methods evaluation of a <b>dialog-based in-vehicle coach</b> vs. dashboard feedback. Ran simulator and in-vehicle studies, synchronized eye-tracking, physiological, and performance signals, and delivered decision-ready readouts that informed coaching flow changes.</p>
 
