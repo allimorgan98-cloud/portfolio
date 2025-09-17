@@ -5,6 +5,26 @@ description: "Curriculum vitae of Allison Morgan"
 permalink: /cv/
 ---
 
+{% assign publications = site.publication | group_by: 'year' | sort: 'name' | reverse %}
+
+<style>
+  /* Minimal CV layout styling (self-contained) */
+  .cv h1 { font-size: 2rem; margin-bottom: .25rem; }
+  .cv header p { margin: .25rem 0 0; line-height: 1.4; }
+  .cv .cv-pdf { font-size: .95rem; margin-left: .5rem; }
+  .cv section { margin-top: 2rem; }
+  .cv h2 { font-size: 1.25rem; margin-bottom: .75rem; border-bottom: 1px solid #ddd; padding-bottom: .25rem; }
+  .cv h3 { font-size: 1.05rem; margin: .75rem 0 .5rem; }
+  .cv-dated-entry { display: grid; grid-template-columns: 100px 1fr; column-gap: 1rem; margin-bottom: .75rem; }
+  .cv-dated-date { color:#666; white-space:nowrap; }
+  .cv-dated-content b a { text-decoration: none; }
+  .cv-oneline-entries p { margin-bottom: .25rem; }
+  .cv .cv-publication-title { font-weight: 600; text-decoration: none; }
+  .cv .cv-author, .cv .cv-coauthor { text-decoration: none; }
+  .cv .cv-note { color:#666; }
+  @media (max-width:576px){ .cv-dated-entry{ grid-template-columns: 1fr; } .cv-dated-date{ margin-bottom:.2rem; } }
+</style>
+
 <div class="cv container py-4">
   <div class="row">
     <div class="col-12">
@@ -19,21 +39,10 @@ permalink: /cv/
         </h1>
         <p>
           <a href="mailto:allimorgan98@gmail.com">allimorgan98@gmail.com</a><br>
-          <span>Oakland, CA</span><br>
+          Oakland, CA<br>
           <a href="https://linkedin.com/in/allison-morgan-9602041a6">linkedin.com/in/allison-morgan</a>
         </p>
       </header>
-
-      <!-- Summary -->
-      <section>
-        <h2>Summary</h2>
-        <div class="cv-oneline-entries">
-          <p>
-            Human factors and UX researcher with 4+ years’ experience running small- and large-scale human-subjects studies across lab, vehicle, and remote settings. Specializes in end-to-end data pipelines, including
-            <b>IRB-compliant collection</b>, <b>multimodal instrumentation</b> (VR/AR, <b>eye tracking</b>, <b>physiological sensors</b>), <b>mixed-methods analysis</b>, and <b>data management</b>. Known for standardizing protocols across teams and translating human-subjects data into product decisions, research outputs, and transferable technology.
-          </p>
-        </div>
-      </section>
 
       <!-- Education -->
       <section>
@@ -47,12 +56,12 @@ permalink: /cv/
         </div>
       </section>
 
-      <!-- Experience -->
+      <!-- Employment -->
       <section>
-        <h2>Experience</h2>
+        <h2>Employment</h2>
 
         <div class="cv-dated-entry">
-          <div class="cv-dated-date">Jan 2022 – Sep 2025</div>
+          <div class="cv-dated-date">Jan 2022 –<br>Sep 2025</div>
           <div class="cv-dated-content">
             <b><a href="https://www.tri.global/our-work/human-interactive-driving">Toyota Research Institute — Human Interactive Driving</a></b>, Los Altos, CA<br>
             UX Research Associate
@@ -62,20 +71,21 @@ permalink: /cv/
               <li>Built study ops pipelines (scheduling, vendor coordination, IRB); recruited/surveyed 100+ participants across cross-functional studies.</li>
               <li>Created reusable protocols and technical documentation; established data governance/collection standards for reproducibility and scale.</li>
               <li>Operated multimodal rigs (biosensors, eye tracking, simulator I/O); ensured signal quality and synchronized behavioral data.</li>
-              <li>Conducted interviews and syntheses; delivered decision-ready reports to inform HMI design and surface new research opportunities.</li>
-              <li>Designed validated measures/surveys; performed mixed-methods analyses to assess UX and HMI efficacy.</li>
+              <li>Performed mixed-methods analyses; delivered decision-ready reports to inform HMI design and surface new research opportunities.</li>
             </ul>
           </div>
         </div>
 
         <div class="cv-dated-entry">
-          <div class="cv-dated-date">May 2020 – Feb 2022</div>
+          <div class="cv-dated-date">May 2020 –<br>Feb 2022</div>
           <div class="cv-dated-content">
             <b>UC San Diego</b>, La Jolla, CA<br>
-            Research Assistant — <a href="https://hxi.ucsd.edu">Human-centered eXtended Intelligence (HXI)</a> · <a href="https://cclab.ucsd.edu">Comparative Cognition Lab</a> · <a href="https://elc-lab-ucsd.com">Early Learning &amp; Cognition Lab</a>
+            Research Assistant — <a href="https://hxi.ucsd.edu">Human-centered eXtended Intelligence (HXI)</a> ·
+            <a href="https://cclab.ucsd.edu">Comparative Cognition Lab</a> ·
+            <a href="https://elc-lab-ucsd.com">Early Learning &amp; Cognition Lab</a>
             <ul class="mb-2">
-              <li>Designed protocols and stimuli (audio/visual); ran in-person and remote testing with child and adult participants.</li>
-              <li>Managed data quality control and documentation; consolidated datasets and archived study materials for cross-lab reuse.</li>
+              <li>Designed protocols and stimuli; ran in-person and remote testing with child and adult participants.</li>
+              <li>Managed data QC and documentation; consolidated datasets and archived materials for cross-lab reuse.</li>
             </ul>
           </div>
         </div>
@@ -85,93 +95,67 @@ permalink: /cv/
       <section>
         <h2>Skills</h2>
         <div class="cv-oneline-entries">
-          <p><b>Technical:</b> Python, R, ROS, Linux, Git; qualitative coding tools (Dedoose, MAXQDA, Atlas.ti); Jupyter, Excel, VS Code</p>
-          <p><b>Research Methods:</b> Empirical experimentation, usability testing, interviews, ethnographic research, A/B testing, surveys; statistical analysis, mixed-methods, behavioral logging, time-synced data capture</p>
-          <p><b>Multimodal Instrumentation:</b> VR/AR, driving simulators; <b>eye tracking</b> (Tobii, SmartEye); <b>physiological sensors</b> (Empatica, EmotiBit, Shimmer); surveys (Qualtrics)</p>
+          <p><b>Technical:</b> Python, R, ROS, Linux, Git; qualitative coding (Dedoose, MAXQDA, Atlas.ti); Jupyter, Excel, VS Code</p>
+          <p><b>Methods:</b> Usability testing, empirical experimentation, interviews, ethnography, A/B testing, surveys; statistical analysis, mixed-methods, behavioral logging, time-synced data capture</p>
+          <p><b>Instrumentation:</b> VR/AR, driving simulators; <b>eye tracking</b> (Tobii, SmartEye); <b>physiological sensors</b> (Empatica, EmotiBit, Shimmer); Qualtrics</p>
         </div>
       </section>
 
-      <!-- Publications & Patents -->
+      <!-- Publications -->
       <section>
-        <h2>Publications &amp; Patents (selected)</h2>
+        <h2>Publications</h2>
+        {% for pubs in publications %}
+          {% assign pub_items_sorted = pubs.items | sort: "month" | reverse %}
+          {% for pub in pub_items_sorted %}
+            <div class="cv-dated-entry">
+              <div class="cv-dated-date">{% if forloop.first %}{{ pubs.name }}{% endif %}</div>
+              <div class="cv-dated-content">
+                <a class="cv-publication-title" href="{{ '/publication/' | append: pub.slug | relative_url }}">{{ pub.title }}</a><br>
+                {% for author in pub.authors %}
+                  {% assign author_data = site.data.people.people | where:"name", author | first %}
+                  {% if author == "Allison Morgan" %}
+                    <span class="cv-author"><b>Allison Morgan</b></span>
+                  {% else %}
+                    {% if pub.coauthors and pub.coauthors contains author %}
+                      {% if author_data and author_data.website %}
+                        <a href="{{ author_data.website }}" class="cv-author">{{ author }}</a>* 
+                      {% else %}
+                        <span class="cv-author">{{ author }}</span>*
+                      {% endif %}
+                    {% else %}
+                      {% if author_data and author_data.website %}
+                        <a href="{{ author_data.website }}" class="cv-coauthor">{{ author }}</a>
+                      {% else %}
+                        <span class="cv-coauthor">{{ author }}</span>
+                      {% endif %}
+                    {% endif %}
+                  {% endif %}
+                  {% unless forloop.last %}, {% endunless %}
+                {% endfor %}
+                {% if pub.coauthors %}<span class="cv-note ms-1">(* co-first authorship)</span>{% endif %}
+                <br>
+                {{ pub.venue }}.{% if pub.note %} <span class="cv-note">({{ pub.note }})</span>{% endif %}<br>
+                {% if pub.award %}<span class="cv-note"><i class="fas fa-medal me-1"></i>{{ pub.award }}</span>{% endif %}
+              </div>
+            </div>
+          {% endfor %}
+        {% endfor %}
+      </section>
 
-        <h3 class="mt-2">Publications</h3>
-        <div class="cv-dated-entry">
-          <div class="cv-dated-date">2025</div>
-          <div class="cv-dated-content">
-            Costa, J., <b>Morgan, A.</b>, Yasuda, H., Sumner, E., Gopinath, D., Chau, S., Nguyen, H., Best, A., Rosman, G., &amp; Chen, T.
-            “From Dashboards to Dialogue: Evaluating a Conversational AI Coach for Performance Driving Skill Development.”
-            <i>AutomotiveUI ’25</i>, accepted for publication.
-          </div>
-        </div>
-
-        <div class="cv-dated-entry">
-          <div class="cv-dated-date">2025</div>
-          <div class="cv-dated-content">
-            Gopinath, D., Cui, X., DeCastro, J., Sumner, E., Costa, J., Yasuda, H., <b>Morgan, A.</b>, Dees, L., Chau, S., Leonard, J., <i>et&nbsp;al.</i>
-            “Computational teaching for driving via multi-task imitation learning.”
-            <i>IEEE ICRA 2025</i>, 7019–7027. IEEE.
-          </div>
-        </div>
-
-        <div class="cv-dated-entry">
-          <div class="cv-dated-date">2025</div>
-          <div class="cv-dated-content">
-            Dallas, J., <b>Morgan, A.</b>, Yasuda, H., Thompson, M., Chen, T., &amp; Subosits, J.
-            “Task Decomposition for Learning Advanced Driving Skills.”
-            <i>American Control Conference (ACC) 2025</i>, 4023–4030. IEEE.
-          </div>
-        </div>
-
-        <div class="cv-dated-entry">
-          <div class="cv-dated-date">2025</div>
-          <div class="cv-dated-content">
-            Schrum, M., <b>Morgan, A.</b>, Gopinath, D., Costa, J., Sumner, E., Rosman, G., &amp; Chen, T.
-            “A Data-Driven Framework for Skill Representation.”
-            <i>LEAP-HRI Workshop at HRI ’25</i>, accepted.
-          </div>
-        </div>
-
-        <div class="cv-dated-entry">
-          <div class="cv-dated-date">2024</div>
-          <div class="cv-dated-content">
-            Sumner, E. S., DeCastro, J., Costa, J., Gopinath, D. E., Kimani, E., Hakimi, S., <b>Morgan, A.</b>, Best, A., Nguyen, H., Brooks, D. J., <i>et&nbsp;al.</i>
-            “Personalizing driver safety interfaces via driver cognitive factors inference.”
-            <i>Scientific Reports</i>, 14(1), 18058.
-          </div>
-        </div>
-
+      <!-- Patents -->
+      <section>
+        <h2>Patents</h2>
         <div class="cv-dated-entry">
           <div class="cv-dated-date">2024</div>
           <div class="cv-dated-content">
-            Yasuda, H., Thompson, M., Rios Lazcano, A. M., <b>Morgan, A.</b>, Dallas, J., Lee, J., Chen, T. L., Subosits, J., &amp; Nimura, K.
-            “Gliding on simulated ice: Effect of low-μ emulation on drift training.”
-            <i>AutomotiveUI ’24</i>, 23–31.
-          </div>
-        </div>
-
-        <div class="cv-dated-entry">
-          <div class="cv-dated-date">2022</div>
-          <div class="cv-dated-content">
-            Gopinath, D., DeCastro, J., Rosman, G., Sumner, E., <b>Morgan, A.</b>, Hakimi, S., &amp; Stent, S.
-            “HMIway-env: A framework for simulating behaviors and preferences to support human–AI teaming in driving.”
-            <i>CVPR 2022</i>, 4342–4350.
-          </div>
-        </div>
-
-        <h3 class="mt-3">Patents</h3>
-        <div class="cv-dated-entry">
-          <div class="cv-dated-date">2024</div>
-          <div class="cv-dated-content">
-            dos Reis Costa, J. M., Chen, T. L., Sumner, E. S., <b>Morgan, A.</b>, <i>et&nbsp;al.</i>
+            dos Reis Costa, J. M., Chen, T. L., Sumner, E. S., <b>Morgan, A.</b>, <i>et&nbsp;al.</i><br>
             <i>Augmented reality interfaces for speed regulation through optical illusions</i>. US Patent App. 18/182,987. Published 2024-09-19.
           </div>
         </div>
-
         <div class="cv-dated-entry">
           <div class="cv-dated-date">2023</div>
           <div class="cv-dated-content">
-            DeCastro, J., Rosman, G., Stent, S. A. I., Sumner, E., Hakimi, S., Gopinath, D. E., <b>Morgan, A.</b>
+            DeCastro, J., Rosman, G., Stent, S. A. I., Sumner, E., Hakimi, S., Gopinath, D. E., <b>Morgan, A.</b><br>
             <i>System and method for training at least one policy using a framework for encoding human behaviors and preferences in a driving environment</i>. US Patent App. 18/098,776. Published 2023-10-19.
           </div>
         </div>
@@ -182,6 +166,5 @@ permalink: /cv/
 </div>
 
 <script>
-  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
-  var tooltipList = tooltipTriggerList.map(function (el) { return new bootstrap.Tooltip(el); });
-</script>
+  var tooltip
+
