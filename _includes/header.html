@@ -7,21 +7,22 @@
       <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
         <ul class="navbar-nav ms-auto mt-4 mt-lg-0 navbar-nav-scroll">
           <li class="nav-item">
-            <a class="nav-link {% if page.url == '/' %} active {% endif %}" aria-current="page" href="/">Home</a>
+            <a class="nav-link{% if page.url == '/' %} active{% endif %}" href="{{ '/' | relative_url }}">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link {% if page.url contains 'publication' %} active {% endif %}" aria-current="page" href="/publication">Publication</a>
+            <a class="nav-link{% if page.url contains '/publication/' %} active{% endif %}" href="{{ '/publication/' | relative_url }}">Publication</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link {% if page.url contains 'project' %} active {% endif %}" aria-current="page" href="/project">Project</a>
+            <a class="nav-link{% if page.url contains '/project/' %} active{% endif %}" href="{{ '/project/' | relative_url }}">Project</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link {% if page.url contains 'cv' %} active {% endif %}" aria-current="page" href="/cv">CV</a>
+            <a class="nav-link{% if page.url contains '/cv/' %} active{% endif %}" href="{{ '/cv/' | relative_url }}">CV</a>
           </li>
-    
           <!--
           <li class="nav-item">
-            <a class="nav-link {% if page.url contains 'blog' %} active {% endif %}" aria-current="page" target="_blank" rel="noopener noreferrer" href="https://donghoon.io/blog/">Blog<i class="fa-regular fa-arrow-up-right-from-square" style="padding-left: 5px;"></i></a>
+            <a class="nav-link{% if page.url contains '/blog/' %} active{% endif %}" target="_blank" rel="noopener noreferrer" href="https://donghoon.io/blog/">
+              Blog<i class="fa-regular fa-arrow-up-right-from-square" style="padding-left: 5px;"></i>
+            </a>
           </li>
           -->
         </ul>
@@ -38,25 +39,12 @@
     border-top: none;
     border-right: none;
     border-left: none;
-    transition: color .15s ease-in-out, background-color .15s ease-in-out,border-color .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
   }
-  .dropdown-toggle:hover {
-    font-weight: 500
-  }
-  .dropdown:hover .dropdown-menu {
-    display: block;
-    margin-top: 0;
- }
- .dropdown-menu {
-    --bs-dropdown-border-radius: 0 !important;
-    padding-top: 0 !important;
-    padding-bottom: 0 !important
- }
- .dropdown-item {
-  font-size: .95rem !important;
-  padding: .3rem .75rem !important;
- }
- .dropdown-item:active {
-  background-color: #999 !important
- }
+  .dropdown-toggle:hover { font-weight: 500 }
+  .dropdown:hover .dropdown-menu { display: block; margin-top: 0; }
+  .dropdown-menu { --bs-dropdown-border-radius: 0 !important; padding-top: 0 !important; padding-bottom: 0 !important }
+  .dropdown-item { font-size: .95rem !important; padding: .3rem .75rem !important; }
+  .dropdown-item:active { background-color: #999 !important }
 </style>
+
