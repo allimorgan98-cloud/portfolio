@@ -5,9 +5,6 @@ description: UX Researcher
 ---
 
 {% assign projects = site.data.project-main.project %}
-{% assign news = site.data.news.list %}
-{% assign travels = site.data.travel.list %}
-{% assign musics = site.data.music.musics %}
 
 <div class="container pt-3 pb-4">
     <div class="container vertical-center">
@@ -60,45 +57,7 @@ description: UX Researcher
 </div>
 <div class="container mb-0">
   <div class="row d-flex align-items-stretch">
-    <!-- News Column -->
-    <div class="col-12 col-sm-8 d-flex flex-column" style="padding-bottom: 3rem !important;">
-      <div class="flex-fill d-flex flex-column">
-        <p class="section-title">News</p>
-        {% for new in news limit: 3 %}
-        <div class="row">
-          <p class="news-title mb-0">{{ new.title }}</p>
-          <p class="news-date mb-1">{{ new.date | date: "%b %-d, %Y" }}</p>
-          <p class="news-description">{{ new.description }}</p>
-        </div>
-        {% unless forloop.last %}
-        <hr class="my-3">
-        {% endunless %}
-        {% endfor %}
-      </div>
-    </div>
-
-    <!-- Travel Column -->
-    <div class="col-12 col-sm-4 d-flex flex-column">
-        <div class="flex-fill d-flex flex-column">
-            <p class="section-title">Travel</p>
-            {% for travel in travels limit: 10 %}
-            <div class="row">
-            <p class="travel-title mb-0 d-flex align-items-center">
-                <!-- Assign a fixed width to the date span -->
-                <span class="travel-date me-2" style="width: 55px;">
-                {{ travel.date | date: "%b %Y" }}
-                </span>
-                <span>
-                {{ travel.detail }} · {{ travel.location }}
-                </span>
-            </p>
-            </div>
-            {% unless forloop.last %}
-            <hr style="margin: .4rem 0 !important">
-            {% endunless %}
-            {% endfor %}
-        </div>
-        </div>
+  
   </div>
 </div>
 
