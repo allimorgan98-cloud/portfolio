@@ -18,5 +18,6 @@ abstract: "We introduce a lightweight simulation and modeling framework, HMIway-
   - "CVPR"
   - "Simulation"
   - "Human–AI Teaming"
-featured: false
+featured: true
 ---
+pdf: true
