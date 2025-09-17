@@ -36,7 +36,7 @@ project:
     id: icra-mtil
 
   - title: Task Decomposition for Learning Advanced Driving Skills
-    image: acc-task-decomp.jpg
+    image: acc-decomp.png
     detail: >
       <p>Studied <b>hierarchical task decomposition</b> to structure learning of complex performance-driving behaviors; informed training sequence and evaluation measures for coaching.</p>
 
@@ -108,7 +108,7 @@ project:
     id: hmiway-env
 
   - title: Skill Representation for Coaching
-    image: skill-representation.jpg
+    image: skill-rep.png
     detail: >
       <p>Proposed a <b>data-driven schema</b> to represent driving skills from multimodal traces, enabling analysis, feedback, and coaching policies.</p>
 
