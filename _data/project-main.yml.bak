@@ -1,38 +1,29 @@
+
 project:
-  - title: "Conversational AI Coach for Performance Driving"
-    image: "conversational-coach.jpg"
-    venue: "AutomotiveUI ’25 (accepted)"
-    slug: "conversational-coach"
+  - title: "From Dashboards to Dialogue"
+    venue: AutomotiveUI ’25
+    image: conversational-ai-coach-2025-thumb.png
+    slug: conversational-ai-coach-2025
 
-  - title: "Computational Teaching via Multi-Task Imitation Learning"
-    image: "icra-mtil.png"
-    venue: "ICRA ’25"
-    slug: "icra-mtil"
+  - title: "Computational Teaching for Driving"
+    venue: ICRA 2025
+    image: icra-2025-thumb.jpg
+    slug: icra-2025-imitation-teaching
 
-  - title: "Task Decomposition for Learning Advanced Driving Skills"
-    image: "acc-task-decomp.jpg"
-    venue: "ACC ’25"
-    slug: "acc-task-decomposition"
+  - title: "A Data-Driven Framework for Skill Representation"
+    venue: HRI ’25 (LEAP-HRI)
+    image: skill-representation-2025-thumb.png
+    slug: skill-representation-2025
 
-  - title: "Gliding on Simulated Ice: Low-μ Drift Training"
-    image: "low-mu-drift.png"
-    venue: "AutomotiveUI ’24"
-    slug: "low-mu-drift"
+  - title: "Gliding on Simulated Ice"
+    venue: AutomotiveUI 2024
+    image: gliding-on-simulated-ice-2024-thumb.png
+    slug: gliding-on-simulated-ice-2024
 
-  - title: "Personalizing Driver Safety Interfaces"
-    image: "cognitive-factors.png"
-    venue: "Scientific Reports ’24"
-    slug: "sci-rep-cognitive-factors"
-
-  - title: "HMIway-env: Human–AI Teaming Simulation"
-    image: "hmiway-env.png"
-    venue: "CVPR ’22"
-    slug: "hmiway-env"
-
-  - title: "Skill Representation for Coaching"
-    image: "skill-representation.jpg"
-    venue: "HRI ’25 Workshop"
-    slug: "hri-skill-representation"
+  - title: "Task Decomposition for Advanced Driving Skills"
+    venue: ACC 2025
+    image: task-decomposition-acc-2025.png
+    slug: task-decomposition-acc-2025
 
   - title: "MeTime — Personalized Streaming Discovery"
     image: "metime-cover.png"
