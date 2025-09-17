@@ -24,5 +24,6 @@ category:
   - "Personalization"
   - "Automotive"
 featured: false
+pdf: /assets/pdf/personalizing_cog_factors.pdf
 ---
 
