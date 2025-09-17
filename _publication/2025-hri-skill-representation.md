@@ -31,7 +31,7 @@ category:
 featured: false
 # Optional extras:
 # note: accepted
-# pdf: true            # or "/assets/pdf/skill-representation-2025.pdf"
+pdf: /assets/pdf/LEAP-HRI_2025_paper_2.pdf
 # video:
 # slide:
 # poster:
