@@ -10,7 +10,7 @@ project:
     slug: "icra-mtil"
 
   - title: "Task Decomposition for Learning Advanced Driving Skills"
-    image: "acc-task-decomp.jpg"
+    image: "acc-decomp.png"
     venue: "ACC ’25"
     slug: "acc-task-decomposition"
 
@@ -30,7 +30,7 @@ project:
     slug: "hmiway-env"
 
   - title: "Skill Representation for Coaching"
-    image: "skill-representation.jpg"
+    image: "skill-rep.png"
     venue: "HRI ’25 Workshop"
     slug: "hri-skill-representation"
 
