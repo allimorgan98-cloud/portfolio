@@ -1,29 +1,23 @@
 ---
+---
 layout: publication
-title: Leveraging AI to Assist Emotional Supports in Online Mental Health Community
+title: "HMIway-env: A Framework for Simulating Behaviors and Preferences to Support Human–AI Teaming in Driving"
 year: 2022
-month: 3
+month: 6
 authors:
-  - Donghoon Shin
-  - Subeen Park
-  - Esther Hehsun Kim
-  - Soomin Kim
-  - Jinwook Seo
-  - Hwajung Hong
-venue: CHI 2022 Workshop
-venue_full: CHI 2022 Workshop on the Future of Emotion in HCI
-abstract: Although sharing emotional supports in online mental health communities (OMHCs) is an effective and accessible way of managing mental wellbeing, it is often difficult for both seekers and providers. To support empathetic interactions, we design an AI-infused workflow that allows users to write emotional supporting messages to other users' posts based on the elicitation of the seeker's emotion and contextual keywords from writing. Based on a preliminary user study (N = 10), we identified that the system helped seekers to clarify emotion and describe text concretely while writing a post. Providers could also learn how to react empathetically to the post. Based on these results, we suggest design implications for our proposed system.
-bibtex: |-
-  @inproceedings{omhcs_workshop,
-            title = {Leveraging AI to Assist Emotional Supports in Online Mental Health Community},
-            author = {Shin, Donghoon and Park, Subeen and Kim, Esther Hehsun and Kim, Soomin and Seo, Jinwook and Hong, Hwajung},
-            year = 2022,
-            booktitle = {CHI 2022 Workshop on the Future of Emotion in HCI},
-            location = {New Orleans, LA, USA},
-            keywords = {online mental health community, AI-infused system, emotional support, peer support}
-          }
-note: Future of Emotion in HCI
-category: 
-  - "AI / NLP"
-  - "Healthcare"
+  - Deepak Gopinath
+  - Jonathan DeCastro
+  - Guy Rosman
+  - Emily Sumner
+  - Allison Morgan
+  - Shabnam Hakimi
+  - Simon Stent
+venue: CVPR 2022
+venue_full: "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2022), pp. 4342–4350"
+abstract: "We introduce a lightweight simulation and modeling framework, HMIway-env, for studying human-machine teaming in the context of driving. The goal of the framework is to accelerate the development of adaptive AI systems which can respond to individual driver states, traits, and preferences, by serving as a data-generation engine and training environment for learning personalized human-AI teaming policies. We extend highway-env, an OpenAI Gym-based simulator environment, to enable specification of human driver behavior, and design of vehicle-driver interactions and outcomes. We describe one instance of our framework incorporating models for distracted and cautious driving, which we validate through crowd-sourced feedback, and show early experimental results toward the training of better intervention policies."
+:
+  - "CVPR"
+  - "Simulation"
+  - "Human–AI Teaming"
+featured: false
 ---
