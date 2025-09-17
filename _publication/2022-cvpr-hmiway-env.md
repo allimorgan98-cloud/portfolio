@@ -15,15 +15,11 @@ authors:
 venue: "CVPR 2022"
 venue_full: "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2022), pp. 4342–4350."
 abstract: >-
-  We introduce a lightweight simulation and modeling framework, HMIway-env, for studying human–machine teaming in driving.
-category:
+ "We introduce a lightweight simulation and modeling framework, HMIway-env, for studying human-machine teaming in the context of driving. The goal of the framework is to accelerate the development of adaptive AI systems which can respond to individual driver states, traits, and preferences, by serving as a data-generation engine and training environment for learning personalized human-AI teaming policies. We extend highway-env, an OpenAI Gym-based simulator environment, to enable specification of human driver behavior, and design of vehicle-driver interactions and outcomes. We describe one instance of our framework incorporating models for distracted and cautious driving, which we validate through crowd-sourced feedback, and show early experimental results toward the training of better intervention policies."
   - CVPR
   - Simulation
   - Human–AI Teaming
 featured: false
+hero: hmiway-env-2022.jpg
 pdf: /assets/pdf/hmi_env.pdf
-# video: abc123
-# slide: /assets/pdf/hmiway-env-slides.pdf
-# poster: /assets/pdf/hmiway-env-poster.pdf
-# demo: https://example.com/demo
 ---
