@@ -21,7 +21,7 @@ category:
   - Simulation
   - Human–AI Teaming
 featured: false
-pdf: true           # or provide a path like "/assets/pdf/hmiway-env-2022.pdf"
+pdf: /assets/pdf/hmi_env.pdf
 # video: abc123
 # slide: /assets/pdf/hmiway-env-slides.pdf
 # poster: /assets/pdf/hmiway-env-poster.pdf
