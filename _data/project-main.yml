@@ -1,29 +1,40 @@
 project:
-  - title: "Agent system to simulate design collaboration"
-    image: "postermate.jpg"
-    venue: UIST '25
-    slug: uist2025_postermate_paper
-  - title: "Tailoring translational artifacts for design with generative AI"
-    image: "customized-design-card.jpg"
-    venue: DIS '25
-    slug: dis2025_paper2customization_paper
-  - title: "Transforming papers into design cards with generative AI"
-    image: "design_card.jpg"
-    venue: CHI '24
-    slug: chi2024_paper2card_paper
-  - title: "AI-assisted causal diagramming for human-centered design"
-    image: "cpd.jpg"
-    venue: CHI '24
-    slug: chi2024_cpd-hcd_paper
-  - title: "Tailoring an evidence-based exercise plan with LLMs"
-    image: "exercise.jpg"
-    venue: CUI '25
-    slug: cui2025_planfitting_paper
-  - title: "AI-infused chat moderation for ad hoc teamworks"
-    image: "chatbot.jpg"
-    venue: CHI '23
-    slug: chi2023_introbot_paper
-  - title: "Exploring the roles of LLMs in personal journaling"
-    image: "diary.jpg"
-    venue: CHI '24
-    slug: chi2024_diarymate_paper
+  - title: "Conversational AI Coach for Performance Driving"
+    image: "conversational-coach.jpg"
+    venue: AutomotiveUI '25 (accepted)
+    slug: conversational-coach
+
+  - title: "Computational Teaching via Multi-Task Imitation Learning"
+    image: "icra-mtil.jpg"
+    venue: ICRA '25
+    slug: icra-mtil
+
+  - title: "Task Decomposition for Learning Advanced Driving Skills"
+    image: "acc-task-decomp.jpg"
+    venue: ACC '25
+    slug: acc-task-decomposition
+
+  - title: "Gliding on Simulated Ice: Low-μ Drift Training"
+    image: "low-mu-drift.jpg"
+    venue: AutomotiveUI '24
+    slug: low-mu-drift
+
+  - title: "Personalizing Driver Safety Interfaces"
+    image: "cognitive-factors.jpg"
+    venue: Scientific Reports '24
+    slug: sci-rep-cognitive-factors
+
+  - title: "HMIway-env: Human–AI Teaming Simulation"
+    image: "hmiway-env.jpg"
+    venue: CVPR '22
+    slug: hmiway-env
+
+  - title: "Skill Representation for Coaching"
+    image: "skill-representation.jpg"
+    venue: HRI '25 Workshop
+    slug: hri-skill-representation
+
+- title: "MeTime — Personalized Streaming Discovery"
+    image: "metime-cover.jpg"     # put this image in the same folder your other project images live in
+    venue: UCSD • 2021
+    slug: metime
