@@ -1,914 +1,146 @@
 project:
-  - title: Internship at Google Research
-    image: google.jpg
+  - title: Conversational AI Coach for Performance Driving
+    image: conversational-coach.jpg
     detail: >
-      <p>From 2024 to 2025, I worked at Google Research as a Student Researcher on enhancing the use of LLMs (details confidential).</p>
+      <p>Mixed-methods evaluation of a <b>dialog-based in-vehicle coach</b> vs. dashboard feedback. Ran simulator and in-vehicle studies, synchronized eye-tracking, physiological, and performance signals, and delivered decision-ready readouts that informed coaching flow changes.</p>
+
+      <img src='site.baseurl/assets/images/project_detail/conversational-coach.jpg' class='modal-image-responsive' alt='Conversational coach keyscreen'>
 
       <hr>
 
-      <p><span style="font-weight: 300">[My role in this project]</span><br>Student Researcher</p>
+      <p><span style="font-weight: 300">[My role]</span><br>Lead UXR — study design, instrumentation QA, analysis, stakeholder readout</p>
     tags:
-      - Internship
-      - LLM
+      - <i class='fas fa-book'></i>&nbsp; AutomotiveUI ’25
+      - HMI
+      - Mixed-methods
     description: >-
-      Enhancing the Use of LLMs
-    id: customized_design_card
-  - title: PosterMate
-    image: postermate.jpg
-    paper: uist2025_postermate_paper.pdf
+      Dialog-based coaching vs. dashboards: evaluation and design implications
+    id: conversational-coach
+
+  - title: Computational Teaching via Multi-Task Imitation Learning
+    image: icra-mtil.jpg
     detail: >
-      <p>Working with <a href='https://gromitchan.com/'>Gromit Chan</a> at Adobe Research, I developed a system that assists with poster design by simulating real-time collaboration with persona-driven agents.</p>
-      <p>This work was done during my internship at Adobe Research. (UIST '25 paper)</p>
-      <img src='site.baseurl/assets/images/project_detail/postermate.jpg' class='modal-image-responsive' alt='keyscreen of our system'>
-      <p style='text-align: center; font-weight: 300;'>Keyscreen of PosterMate</p>
+      <p>Built reliable <b>capture and evaluation pipelines</b> supporting multi-task imitation learning for driving skills. Standardized time-sync across simulator I/O, eye-tracking, and physio; defined user-centered success metrics in partnership with engineering.</p>
+
+      <img src='site.baseurl/assets/images/project_detail/icra-mtil.jpg' class='modal-image-responsive' alt='ICRA project schematic'>
 
       <hr>
 
-      <p><span style="font-weight: 300">[My role in this project]</span><br>Leading the project</p>
+      <p><span style="font-weight: 300">[My role]</span><br>UXR & data quality lead — instrumentation, metrics, analysis</p>
     tags:
-      - <i class='fas fa-book'></i>&nbsp; UIST '25
-      - Internship
-      - Agent
-      - Design
+      - <i class='fas fa-book'></i>&nbsp; ICRA ’25
+      - Data pipeline
+      - Evaluation
     description: >-
-      Multi-agent system for supporting design by simulating real-time collaboration
-    link: https://research.adobe.com/news/the-research-behind-project-get-savvy/
-    id: postermate
-  - title: What About My Design Context?
-    image: customized-design-card.jpg
-    link: 'https://paper2card.com'
-    paper: dis2025_paper2customization_paper.pdf
+      Time-synced multimodal capture and user-centered evaluation for IL
+    id: icra-mtil
+
+  - title: Task Decomposition for Learning Advanced Driving Skills
+    image: acc-task-decomp.jpg
     detail: >
-      <p>Advised by <a href='https://www.llwang.net/'>Lucy Lu Wang</a> and <a href='https://faculty.washington.edu/garyhs/'>Gary Hsieh</a>, I built a system that automatically tailors design implications from HCI papers to individual designers' needs with generative AI. (DIS '25 paper)</p>
+      <p>Studied <b>hierarchical task decomposition</b> to structure learning of complex performance-driving behaviors; informed training sequence and evaluation measures for coaching.</p>
 
-      <img src='site.baseurl/assets/images/project_detail/customized-design-card.jpg' class='modal-image-responsive' alt='keyscreen of our system'>
-
-      <p style='text-align: center; font-weight: 300;'>Pipeline for generating customized design cards using our system</p>
+      <img src='site.baseurl/assets/images/project_detail/acc-task-decomp.jpg' class='modal-image-responsive' alt='Task decomposition concept'>
 
       <hr>
 
-      <p><span style="font-weight: 300">[My role in this project]</span><br>Leading the project</p>
+      <p><span style="font-weight: 300">[My role]</span><br>Study design & analysis — protocol, metrics, synthesis</p>
     tags:
-      - <i class='fas fa-book'></i>&nbsp; DIS '25
-      - LLM
-      - Design
-      - Translational science
+      - <i class='fas fa-book'></i>&nbsp; ACC ’25
+      - Skill learning
+      - Experiment design
     description: >-
-      Leveraging generative Al to tailor translational artifacts for designers
-    id: customized_design_card
-  - title: PlanFitting
-    image: exercise-planning-prompt.jpg
-    paper: cui2025_planfitting_paper.pdf
+      Structuring complex skills with hierarchical decomposition
+    id: acc-task-decomposition
+
+  - title: Gliding on Simulated Ice — Low-μ Drift Training
+    image: low-mu-drift.jpg
     detail: >
-      <p>Working with <a href='http://younghokim.net/'>Young-Ho Kim</a> at Naver AI, I built an interface that helps users to generate evidence-baesd exercise plans using an LLM chatbot.</p>
+      <p>Evaluated simulated low-friction (<b>low-μ</b>) environments for drift training; analyzed learning and transfer in a controlled simulator study and informed HMI safety cues.</p>
 
-      <p>This work was done during my internship at Naver AI. (CUI '25 paper)</p>
-
-      <img src='site.baseurl/assets/images/project_detail/exercise-planning.jpg' class='modal-image-responsive' alt='keyscreen of our system'>
-
-      <p style='text-align: center; font-weight: 300;'>Keyscreen of our system</p>
+      <img src='site.baseurl/assets/images/project_detail/low-mu-drift.jpg' class='modal-image-responsive' alt='Low-mu drift training'>
 
       <hr>
 
-      <p><span style="font-weight: 300">[My role in this project]</span><br>Leading the project</p>
+      <p><span style="font-weight: 300">[My role]</span><br>Study design, instrumentation, data analysis</p>
     tags:
-      - <i class='fas fa-book'></i>&nbsp; CUI '25
-      - Internship
-      - LLM
-      - Healthcare
-      - Chatbot
+      - <i class='fas fa-book'></i>&nbsp; AutomotiveUI ’24
+      - Simulator
+      - HMI
     description: >-
-      Natural language interface that helps to craft and iterate on evidence-based exercise plans
-    id: planfitting
-  - title: From Paper to Card
-    image: design-card.jpg
-    link: 'https://paper2card.com'
-    paper: chi2024_paper2card_paper.pdf
+      Does simulated low-μ improve drift training and transfer?
+    id: low-mu-drift
+
+  - title: Personalizing Driver Safety Interfaces
+    image: cognitive-factors.jpg
     detail: >
-      <p>Advised by <a href='https://www.llwang.net/'>Lucy Lu Wang</a> and <a href='https://faculty.washington.edu/garyhs/'>Gary Hsieh</a>, I built a system that automatically transforms design implications from HCI papers into design cards with generative AI. (CHI '24 paper)</p>
+      <p>Linked inferred <b>cognitive factors</b> to driving outcomes to personalize safety HMI. Contributed to mixed-methods analysis and measurable interface recommendations.</p>
 
-      <img src='site.baseurl/assets/images/project_detail/design-card.jpg' class='modal-image-responsive' alt='keyscreen of our system'>
-
-      <p style='text-align: center; font-weight: 300;'>Pipeline of generating design cards using our system</p>
+      <img src='site.baseurl/assets/images/project_detail/cognitive-factors.jpg' class='modal-image-responsive' alt='Personalization framework'>
 
       <hr>
 
-      <p><span style="font-weight: 300">[My role in this project]</span><br>Leading the project</p>
+      <p><span style="font-weight: 300">[My role]</span><br>Measures design, analysis, recommendations</p>
     tags:
-      - <i class='fas fa-book'></i>&nbsp; CHI '24
-      - LLM
-      - Design
-      - Translational science
+      - <i class='fas fa-book'></i>&nbsp; Scientific Reports ’24
+      - Personalization
+      - Human Factors
     description: >-
-      Transforming HCI papers into design cards with generative AI
-    id: design_card
-  - title: AI-assisted Microtheory-informed Designing
-    image: cpd.jpg
-    paper: chi2024_cpd-hcd_paper.pdf
+      From cognitive factors to personalized safety interfaces
+    id: sci-rep-cognitive-factors
+
+  - title: HMIway-env — Human–AI Teaming Simulation
+    image: hmiway-env.jpg
     detail: >
-      <p>Working with <a href='https://ruican-zhong.netlify.app/'>Ruican Zhong</a>, <a href='https://faculty.washington.edu/garyhs/'>Gary Hsieh</a>, <a href="https://lucascolusso.com/">Lucas Colusso</a>, and Kaiser Permanente research team, we built an LLM-infused Miro plugin that helps designers to generate causal pathway diagrams (CPDs) to inform their theory-driven designing. (CHI '24 paper)</p>
+      <p>Simulation framework modeling <b>driver behaviors and preferences</b> to test human–AI teaming strategies and HMI interventions.</p>
 
-      <img src='site.baseurl/assets/images/project_detail/cpd-example.jpg' class='modal-image-responsive' alt='keyscreen of our system'>
-
-      <p style='text-align: center; font-weight: 300;'>An example of causal pathway diagram (CPD)</p>
+      <img src='site.baseurl/assets/images/project_detail/hmiway-env.jpg' class='modal-image-responsive' alt='HMIway-env schematic'>
 
       <hr>
 
-      <p><span style="font-weight: 300">[My role in this project]</span><br>Building a system</p>
+      <p><span style="font-weight: 300">[My role]</span><br>UXR support — experimental scenarios, study measures, reporting</p>
     tags:
-      - <i class='fas fa-book'></i>&nbsp; CHI '24
-      - LLM
-      - Design
-      - Translational science
+      - <i class='fas fa-book'></i>&nbsp; CVPR ’22
+      - Simulation
+      - Human–AI teaming
     description: >-
-      An LLM-infused Miro plugin that helps causal diagramming for human-centered design
-    id: ai_assisted_cpd
-  - detail: >
-      <p>Working with <a href='https://taewankim.io/'>Taewan Kim</a> and <a
-      href='https://hwajunghong.com'>Hwajung Hong</a>, we explored the
-      design space of generative language models (e.g., GPT-3) in supporting a
-      reflective writing process. (CHI '24 paper)</p>
+      Simulating behaviors/preferences to evaluate teaming & HMI
+    id: hmiway-env
 
-      <img src='site.baseurl/assets/images/project_detail/diarymate.jpg' class='modal-image-responsive'
-      alt='keyscreen of our system'>
-
-      <p style='text-align: center; font-weight: 300;'>Keyscreen of our
-      system</p>
-
-      <hr>
-
-      <p><span style="font-weight: 300">[My role in this project]</span><br>System development, design
-      ideation</p>
-    tags:
-      - <i class='fas fa-book'></i>&nbsp; CHI '24
-      - LLM
-      - Mental health
-    image: diarymate.jpg
-    title: DiaryMate
-    paper: chi2024_diarymate_paper.pdf
-    description: >-
-      Supporting reflective writing processes using an LLM
-    id: diarymate
-  - detail: >
-      <p>Advised by <a href='https://faculty.washington.edu/garyhs/'>Gary
-      Hsieh</a>, I built a chatbot that helps familiarization of ad hoc teammates. Plus, I revealed the efficacy of such
-      familiarization in ad hoc team performance. (CHI '23 paper)</p>
-
-      <img src='site.baseurl/assets/images/project_detail/introbot.jpg'
-      class='modal-image-responsive' alt='keyscreen of our system'>
-
-      <p style='text-align: center; font-weight: 300;'>Overview of the IntroBot's system components</p>
-
-      <hr>
-
-      <p><span style="font-weight: 300">[My role in this project]</span><br>Leading the project</p>
-    tags:
-      - <i class='fas fa-book'></i>&nbsp; CHI '23
-      - Chatbot
-      - NLP
-    image: introbot.jpg
-    title: "IntroBot"
-    paper: chi2023_introbot_paper.pdf
-    description: Conversational AI for supporting familiarization among ad hoc teammates
-    id: introbot
-  - detail: >
-      <p>In this project, we investigated how older adults use online videos
-      for learning. More specifically, we
-      adopted a mixed-method approach by conducting (1) an analysis of 41.8M logs extracted from
-      K-MOOC, a Korean MOOC (Massive Open Online Course) platform and (2)
-      in-depth interview sessions with older adults.<br></p>
-
-      <p>Led by <a href='https://sites.google.com/view/seoyoung/'>Seoyoung
-      Kim</a>, this project was advised by <a href='https://juhokim.com/'>Juho
-      Kim</a>. (CHI '23 paper)</p>
-
-      <img src='site.baseurl/assets/images/project_detail/kmooc.jpg' class='modal-image-responsive'
-      style='max-width: 650px !important;' alt='K-MOOC project image'>
-
-      <p style='text-align: center; font-weight: 300;'>Example of the data
-      analysis from our study</p>
-
-      <hr>
-
-      <p><span style="font-weight: 300">[My role in this project]</span><br>Running interview sessions, taking
-      part in thematic analysis, analyzing log data, writing</p>
-    tags:
-      - <i class='fas fa-book'></i>&nbsp; CHI '23
-      - Log analysis
-    image: kmooc.jpg
-    title: How Older Adults Use Online Videos for Learning
-    paper: chi2023_mooc_paper.pdf
-    description: Understanding how do older adults use online videos for learning
-    id: kmooc
-  - detail: >
-      <p>To guide the design of explanation for assessing damages from satellite
-      imageries, we characterized how humans generate
-      explainations on the AI detection and their effects.<br></p>
-
-      <p>Working with <a href='https://katelyn98.github.io'>Katelyn Morrison</a>,
-      this project was co-advised by <a
-      href='https://kenholstein.myportfolio.com/'>Ken Holstein</a> and <a
-      href='https://perer.org/'>Adam Perer</a>.
-
-      This work was accepted at <a href='https://cscw.acm.org/2023'>CSCW
-      2023</a> and <a
-      href='https://www.hadr.ai/'>NeurIPS '21 Workshop</a> (AI for Humanitarian
-      Assistance and Disaster Response).</p>
-
-      <img src='site.baseurl/assets/images/project_detail/satellite-explainability.jpg'
-      class='modal-image-responsive' alt='satellite imagery project image'>
-
-      <p style='text-align: center; font-weight: 300;'>Examples of the
-      explanation in damage detection tasks from satellite imageries</p>
-
-      <hr>
-
-      <p><span style="font-weight: 300">[My role in this project]</span><br>User study, open-coding responses,
-      system development</p>
-    tags:
-      - <i class='fas fa-book'></i>&nbsp; CSCW '23
-      - <i class='fas fa-book'></i>&nbsp; NeurIPS '21
-      - Explainable AI
-    image: satellite-explainability.jpg
-    title: Explainable AI for Visual Detection Task
-    description: >-
-      Guiding the design of AI explanation for assessing building damages from
-      satellite imageries
-    paper: neurips2021_satellite-explainability_workshop.pdf
-    link: 'https://dig.cmu.edu/publications/2021-satellite-damage-assessment.html'
-    id: satellite-explainability
-  - code: 'https://github.com/donghoon-io/KoSentimentAnalysis'
+  - title: Skill Representation for Coaching
+    image: skill-representation.jpg
     detail: >
-      <p>In this project, we investigated methods to assist emotional support
-      processes in online mental health community, particularly by leveraging
-      AI.<br></p>
+      <p>Proposed a <b>data-driven schema</b> to represent driving skills from multimodal traces, enabling analysis, feedback, and coaching policies.</p>
 
-      <p>To support their community interactions, we developed and
-      deployed (i) multi-class sentiment detection model using BERT to support the
-      affectionate feedback process and (ii) keyword extraction based on the
-      saliency of each keywords to facilitate the experience-sharing
-      processes.<br></p>
-
-      <p>Co-advised by <a href='https://hwajunghong.com'>Hwajung Hong</a> and <a href='http://hcil.snu.ac.kr/people/jinwook-seo'>Jinwook Seo</a>, this work was published in <a href='https://chi2022.acm.org/'>CHI 2022
-      Extended Abstracts</a> (Late-Breaking Work) and <a
-      href='https://cis.unimelb.edu.au/hci/emotion-workshop'>CHI 2022 Workshop</a>
-      (Future of Emotion in HCI).</p>
-
-      <img src='site.baseurl/assets/images/project_detail/omhc.jpg' class='modal-image-responsive'
-      style='max-width: 650px !important;' alt='AI in OMHCs'>
-
-      <p style='text-align: center; font-weight: 300;'>Keyscreens of our
-      system</p>
+      <img src='site.baseurl/assets/images/project_detail/skill-representation.jpg' class='modal-image-responsive' alt='Skill representation concept'>
 
       <hr>
 
-      <p><span style="font-weight: 300">[My role in this project]</span><br>Leading the project, preliminary
-      interview, storyboarding, writing, system development</p>
-    paper: chi2022_omhc_poster.pdf
+      <p><span style="font-weight: 300">[My role]</span><br>Co-author — framing, analysis, narrative</p>
     tags:
-      - <i class='fas fa-book'></i>&nbsp; CHI '22
-      - Mental health
-      - NLP
-    image: omhc.jpg
-    title: AI in Online Mental Health Communities
+      - <i class='fas fa-book'></i>&nbsp; HRI ’25 Workshop
+      - Representation
+      - Coaching
     description: >-
-      AI-assisted emotional support in online mental health communities
-      (OMHCs)
-    id: omhc
-  - category: personal
-    code: 'https://github.com/donghoon-io/snu-crs-refresher'
+      A schema for representing skills from multimodal traces
+    id: hri-skill-representation
+
+  - title: MeTime — Personalized Streaming Discovery
+    image: metime-cover.jpg
     detail: >
-      <p>The course registration process at Seoul National University, often referred to as a "war," is notoriously competitive due to its first-come, first-served nature.<br></p>
+      <p>UCSD app concept to <b>cut time-to-decision</b> for busy streamers. Designed flows and hi-fi prototype with Karam: <b>Taste Curation</b> (quick preference quiz), <b>Randomizer</b> (one-tap play), <b>Tags search</b>, and <b>Saved-content filter</b>.</p>
 
-      <p>During this process, students occasionally refresh the registration website by mistake. When this happens, the system immediately displays an error message and forces the user to log in again. While this might be a measure to prevent the use of macros (though this remains unconfirmed), it poses a significant problem, since logging in again during such a high-pressure moment wastes precious time.<br></p>
+      <img src='site.baseurl/assets/images/project_detail/metime-home.jpg' class='modal-image-responsive' alt='MeTime home screen'>
 
-      <p>To address this issue, I developed a browser extension that allows users to bypass the error message with a single click, eliminating the need for a full log-in. This extension is compatible with both <a href='https://chrome.google.com/webstore/detail/snu-crs-refresher/hhdokgcmhmpckjdhekdjpoaafoggaaan'>Chrome</a> and <a href='https://store.whale.naver.com/detail/dkhijlinmdhldgjbbpmmelahpbnhmpcc'>Whale</a> browsers.</p>
-
-      <img src='site.baseurl/assets/images/project_detail/crs.jpg' class='modal-image-responsive' alt='SNU
-      CRS project image'>
-
-      <p style='text-align: center; font-weight: 300;'>Keyscreen of SNU CRS
-      Refresher</p>
+      <p style='text-align: center; font-weight: 300;'>Home · Tags · Randomizer · Taste Curation</p>
 
       <hr>
 
-      <p><span style="font-weight: 300">[My role in this project]</span><br>Independent project</p>
+      <p><span style="font-weight: 300">[My role]</span><br>Co-designer — research, IA, flows, hi-fi prototype</p>
     tags:
-      - Personal
-      - Chrome
-    image: crs.jpg
-    title: SNU CRS Refresher
-    description: >-
-      Chrome extension for the SNU course registration website designed to help users avoid error messages
-    link: >-
-      https://chrome.google.com/webstore/detail/snu-crs-refresher/hhdokgcmhmpckjdhekdjpoaafoggaaan
-    id: crs
-  - category: schoolwork
-    code: 'https://github.com/donghoon-io/spring2021crp'
-    detail: >
-      <p>Have you ever wished a robot to send romantic messages to the other on
-      behalf of yourself? Having a conversation in a romantic relationship is
-      often difficult. Sometimes we ask our friends for help, but such help is
-      limited.<br></p>
-
-      <p>In this project, we assumed that an AI agent in chat settings became so
-      smart that it perfectly analyzes the counterpart's emotion and suggests
-      responses in a chat setting. Along with a prototype app LOVEGORITHM that
-      helps such a romantic relationship, we designed and developed an LOVEGORITHM
-      online user community that illustrates possible feedback and behaviors of
-      users. Check out the link above!<br></p>
-
-      <p>This work was submitted as a team project assignment to the Spring 2021
-      Creative Research Practice course.</p>
-
-      <img src='site.baseurl/assets/images/project_detail/spring2021crp-1.jpg'
-      class='modal-image-responsive' alt='Spring 2021 creative research practice project
-      first image'>
-
-      <p style='text-align: center; font-weight: 300;'>Keyscreens of
-      LOVEGORITHM</p>
-
-      <img src='site.baseurl/assets/images/project_detail/spring2021crp-2.jpg'
-      class='modal-image-responsive' alt='Spring 2021 creative research practice project
-      second image'>
-
-      <p style='text-align: center; font-weight: 300;'>Keyscreen of LOVEGORITHM
-      online user community</p>
-
-      <hr>
-
-      <p><span style="font-weight: 300">[My role in this project]</span><br>Web development, prototype design,
-      setting up dialogues, ideation</p>
-    tags:
-      - Coursework
-      - Web
-      - Speculative design
-    image: spring2021crp.jpg
-    title: LOVEGORITHM
-    description: >-
-      What if a chatbot hides behind a person in a romantic relationship and fully
-      manages dialogues?
-    link: 'https://donghoon.io/spring2021crp/'
-    id: spring2021crp
-  - category: schoolwork
-    code: 'https://github.com/donghoon-io/PoliNewsBot'
-    detail: >
-      <p>We aimed to develop a system that facilitates users' conversation on
-      political issues and developed a high-fidelity prototype: PoliNewsBot.</p>
-
-      <p>This work was submitted as a team project assignment to the Spring 2021
-      HCI Theory and Practice course.</p>
-
-      <img src='site.baseurl/assets/images/project_detail/spring2021hci.jpg' class='modal-image-responsive'
-      alt='Spring 2021 HCI theory and practice project image'>
-
-      <p style='text-align: center; font-weight: 300;'>Keyscreens of
-      PoliNewsBot</p>
-
-      <hr>
-
-      <p><span style="font-weight: 300">[My role in this project]</span><br>System development, ideation, setting
-      up dialogues</p>
-    tags:
-      - Coursework
-      - CMC
-      - iOS
-    image: spring2021hci.jpg
-    title: PoliNewsBot
-    description: Chat moderator for facilitating discussion on political issues
-    id: spring2021hci
-  - detail: >
-      <p>We explored the role and behavior of entities surrounding translation
-      algorithms, in a situation where users trick and game them.<br></p>
-
-      <p>This work was publised in <a href='https://cscw.acm.org/2021/'>CSCW
-      2021</a>.</p>
-
-      <img src='site.baseurl/assets/images/project_detail/trkic-g00gle.jpg' class='modal-image-responsive'
-      alt='Trick google project image'>
-
-      <p style='text-align: center; font-weight: 300;'>Entities of reviewing
-      communities where translation algorithm is applied</p>
-
-      <hr>
-
-      <p><span style="font-weight: 300">[My role in this project]</span><br>Writing, designing figures</p>
-    tags:
-      - <i class='fas fa-book'></i>&nbsp; CSCW '21
-      - Algorithmic experience
-    image: trkic-g00gle.jpg
-    title: Trkic G00gle
-    description: Why and how users game translation algorithms
-    paper: cscw2021_trkic-g00gle_paper.pdf
-    video: 'https://youtu.be/VVAQqC5tedQ'
-    id: trkic-g00gle
-  - detail: >
-      <p>Due to the irreversible characteristics and disastrous effects of
-      Age-related Macular Degeneration (AMD), a precise diagnosis of the symptoms
-      is extremely important. Yet, paper-based Amsler Grid, the most prevalent
-      testing method, is highly limited in that it requires the indirect report of
-      patients and quantitative reporting is difficult.<br></p>
-
-      <p>In this project, I designed and developed a touch-based Amsler grid web
-      app. As such, I aimed to support patients' exact report of their regions of
-      symptoms.<br></p>
-
-      <p>What made this project special to me is that, I made a LaTeX template for
-      writing this paper! I found that my friends preparing for their thesis
-      always felt it difficult to produce a thesis format, since our department
-      only gave us a 'scanned' version of template, not a real document. Thus, I
-      generated a template which can be found <a
-      href='https://github.com/donghoon-io/SNUECE-BS-thesis'>here</a> (this
-      template was built upon previous Ph.D. dissertation template under
-      license)<br></p>
-
-      <p>This study was conducted for my B.S. thesis, and later published in HCI
-      Korea 2022.</p>
-
-      <img src='site.baseurl/assets/images/project_detail/amslertouch.jpg' class='modal-image-responsive'
-      alt='Amsler touch project image'>
-
-      <p style='text-align: center; font-weight: 300;'>Keyscreen of
-      AmslerTouch</p>
-
-      <hr>
-
-      <p><span style="font-weight: 300">[My role in this project]</span><br>Independent project</p>
-    tags:
-      - <i class='fas fa-book'></i>&nbsp; HCIK '22
-      - Web
-      - Svelte
-    image: amslertouch.jpg
-    title: AmslerTouch
-    description: >-
-      Interactive Amsler grid web app for diagnosing Age-related Macular
-      Degeneration
-    paper: hcik2022_amslertouch_paper.pdf
-    slide: hcik2022_amslertouch_slide.pdf
-    video: 'https://youtu.be/YK8v5d85ZMU'
-    id: amslertouch
-  - code: 'https://github.com/donghoon-io/LiquidEye'
-    detail: >
-      <p>Prolonged time of computer use increased the prevalence of ocular
-      problems including eyestrain, tired eyes, irritation, redness, blurred
-      vision, and double vision, collectively referred to as computer vision
-      syndrome. We aimed to explore the interface elements of
-      computer-based intervention for computer vision syndrome to set design
-      guidelines based on pros/cons of each interface element.<br></p>
-
-      <p>In this project, I developed LiquidEye, an intervention application
-      targeted to MacOS. To understand which design elements of
-      intervention app do users prefer, we collected each user's
-      time-series system preferences through the study, which were jointly analyzed with the
-      self-reported satisfaction to identify the significance of each
-      element statistically. (JMIR '21 paper)</p>
-
-      <img src='site.baseurl/assets/images/project_detail/liquideye.jpg' class='modal-image-responsive'
-      alt='Liquid eye project image'>
-
-      <p style='text-align: center; font-weight: 300;'>Keyscreen of
-      LiquidEye</p>
-
-      <hr>
-
-      <p><span style="font-weight: 300">[My role in this project]</span><br>System development, running interview
-      sessions, writing</p>
-    tags:
-      - <i class='fas fa-book'></i>&nbsp; JMIR '21
-      - MacOS
-    image: liquideye.jpg
-    title: LiquidEye
-    description: >-
-      Exploring design space of Computer Vision Symdrome (CVS) intervention
-      application
-    paper: jmir_liquideye_paper.pdf
-    id: liquideye
-  - code: 'https://github.com/donghoon-io/BlahBlahBot'
-    detail: >
-      <p>It is a prevalent behavior of having a chat with strangers in online
-      settings where people can easily gather. Yet, people often find it difficult
-      to initiate and maintain conversation due to the lack of information about
-      strangers.<br></p>
-
-      <p>Hence, we aimed to facilitate conversation between the strangers with the
-      use of machine learning (ML) algorithms and present BlahBlahBot, an
-      ML-infused chatbot that moderates conversation between strangers with
-      personalized topics. Based on social media posts, BlahBlahBot supports the
-      conversation by suggesting topics that are likely to be of mutual interest
-      between users.<br></p>
-
-      <p>A user study with three groups (control, random topic chatbot, and
-      BlahBlahBot; N=18) found the feasibility of BlahBlahBot in increasing both
-      conversation quality and closeness to the partner, along with the factors
-      that led to such increases from the user interview. Overall, our preliminary
-      results imply that an ML-infused conversational agent can be effective for
-      augmenting a dyadic conversation. (CHI '21 Late-Breaking Work)</p>
-
-      <img src='site.baseurl/assets/images/project_detail/blahblahbot.jpg' class='modal-image-responsive'
-      style='max-width: 650px !important;' alt='BlahBlahBot project image'>
-
-      <p style='text-align: center; font-weight: 300;'>Framework of
-      BlahBlahBot<br></p>
-
-      <hr>
-
-      <p><span style="font-weight: 300">[My role in this project]</span><br>System development, running interview
-      sessions, writing</p>
-    title: BlahBlahBot
-    image: blahblahbot.jpg
-    tags:
-      - <i class='fas fa-book'></i>&nbsp; CHI '21
-      - AI-MC
-      - iOS
-    description: >-
-      Facilitating conversation between strangers using a chatbot with ML-infused
-      personalized topic suggestion
-    paper: chi2021_blahblahbot_poster.pdf
-    video: 'https://youtu.be/6UQi9gCgMjU'
-    id: blahblahbot
-  - category: schoolwork
-    code: 'https://github.com/donghoon-io/Easier-said-than-done'
-    detail: >
-      <p>According to a recent survey conducted by American Psychological
-      Association [1], academic stress is cited as the number one stressor in
-      students' daily life. This issue is specifically considered serious in South
-      Korea, where half of Korean teenagers experienced a thought of suicidal and
-      academic stress is reported as a top-ranked attribute to such phenomenon
-      [2].<br></p>
-
-      <p>This, however, cannot be solely dealt with reducing academic affair.
-      Since such academic phenomenon is multi-faceted with lots of stakeholders
-      involved (e.g., homeroom teacher, parents, and friends), we should not
-      naïvely understand the issue. For example, high schools often focus on
-      increasing the number of students entering so-called 'prestigious
-      universities.' However, by solely focusing on the name of university rather
-      than a major, this often undermines the agency of students' decision on
-      their future career, and leading students to suffer from subsidious academic
-      stresses as well as a stress on the study itself.<br></p>
-
-      <p>Since the academic curriculum drastically changes over time and
-      policy-makers and relatively older people cannot easily understand such a
-      situation, we aimed to show how difficult it is for high school students to
-      'survive' under such factors that often lead to academic stresses. By having
-      users choose a choice in each crossroad of choices and differentiating the
-      following storieline, we, though indirectly, let them feel how stressed high
-      school students would be in the midst of a choice.<br></p>
-
-      <img src='site.baseurl/assets/images/project_detail/fall2020instell.jpg'
-      class='modal-image-responsive' alt='Fall 2020 interactive storytelling project
-      image'>
-
-      <p style='text-align: center; font-weight: 300;'>Keyscreens of Easier said
-      than done<br></p>
-
-      <p>REFERENCE<br>[1] American Psychological Association. (2014).
-      Stress in America: Are teens adopting adults’ stress habits. Washington, DC:
-      Author.<br>[2] Kang, Y. (2014). Poll shows half of Korean teenagers have
-      suicidal thoughts. The Wall Street Journal.</p>
-
-      <hr>
-
-      <p><span style="font-weight: 300">[My role in this project]</span><br>System development</p>
-    title: Easier Said than Done
-    image: fall2020instell.jpg
-    tags:
-      - Coursework
-      - Serious game
-      - iOS
-      - <i class='fa-brands fa-app-store-ios'></i>&nbsp; App Store
-    description: >-
-      iOS-based serious game app submitted to Fall 2020 Interactive Storytelling
-      course
-    appstore: 'https://apps.apple.com/app/id1542957206'
-    id: fall2020instell
-  - category: schoolwork
-    detail: >
-      <p>In this project, we designed an application to support students who had been studying abroad but returned home due to the pandemic. Many of them struggled with irregular sleep patterns caused by time zone differences, which affected both their health and academic performance. To deeply understand their needs, we conducted a series of research activities, including in-depth interviews, observational studies of YouTube vloggers, diary studies, and web-based surveys.<br></p>
-      
-      <p>Based on our findings, we developed <em>夜-planet</em>, an application tailored to students navigating these challenges. The character '夜' means 'night' in Chinese, and the name reflects the app’s focus on supporting nocturnal lifestyles.<br></p>
-      
-      <p>If you're interested in exploring our prototype, please check out the link above.</p>
-
-      <img src='site.baseurl/assets/images/project_detail/fall2020ucd.jpg' class='modal-image-responsive'
-      alt='Fall 2020 user centered design project image'>
-
-      <p style='text-align: center; font-weight: 300;'>Prototype of
-      夜-planet</p>
-
-      <hr>
-
-      <p><span style="font-weight: 300">[My role in this project]</span><br>User study, ideating design
-      elements</p>
-    title: 夜-planet
-    image: fall2020ucd.jpg
-    tags:
-      - Coursework
-      - Design
+      - UCSD
+      - Product design
       - Prototype
-    description: Design homework submitted to Fall 2020 User-Centered Design course
-    link: 'https://www.notion.so/6e350a9141b44a3ab9886b6e443547d1'
-    id: fall2020ucd
-  - code: 'https://github.com/donghoon-io/TalkingBoogie'
-    detail: >
-      <p>At the end of my sophomore year, I came across a CHI paper by chance: <em>“Blocks4All: Overcoming Accessibility Barriers to Blocks Programming for Children with Visual Impairments”</em> by Milne and colleagues. The paper explored how to make block-based programming tools more accessible for children with visual impairments. I was fascinated by how HCI researchers deeply engaged with specific user groups and translated design implications into tangible systems.<br></p> <p>Around that same time, my supervisor asked if I’d be interested in leading a project to develop an AAC (Augmentative and Alternative Communication) application. I immediately said yes; at that point, I was eager to get involved in research, but opportunities were scarce for undergraduates without prior experience. From then on, I spent countless nights developing an iOS app, conducting user studies, reading papers, and designing interfaces. Everything was new to me—from receiving research funding to navigating the IRB process for our study. As luck would have it, we wrapped up the project just in time for the CHI 2020 deadline. We submitted our work, and it was accepted with an Honorable Mention Award.<br></p> <p>In our paper, we emphasized that AAC stakeholders shouldn’t be limited to just the child, but must include caregivers as essential partners in communication. With that in mind, we developed <em>Talkingboogie</em>, a mobile AAC system designed to support children with developmental disabilities and their caregivers in collaboratively shaping effective communication strategies.</p>
-      <img src='site.baseurl/assets/images/project_detail/talkingboogie-1.jpg'
-      class='modal-image-responsive' alt='Flow of TalkingBoogie system'>
-
-      <p style='text-align: center; font-weight: 300;'>Usage flow of
-      TalkingBoogie system<br></p>
-
-      <p>TalkingBoogie system consists of two mobile apps:
-      TalkingBoogie-AAC for caregiver-child communication, and
-          TalkingBoogie-Coach supporting caregiver collaboration.</p>
-      <img src='site.baseurl/assets/images/project_detail/talkingboogie-2.jpg'
-      class='modal-image-responsive' alt='Keyscreen of TalkingBoogie AAC app'>
-
-      <p style='text-align: center; font-weight: 300;'>Keyscreens of
-      TalkingBoogie-AAC</p>
-
-      <img src='site.baseurl/assets/images/project_detail/talkingboogie-3.jpg'
-      class='modal-image-responsive' alt='Keyscreen of TalkingBoogie Coach app'>
-
-      <p style='text-align: center; font-weight: 300;'>Keyscreens of
-      TalkingBoogie-Coach</p>
-
-      <hr>
-
-      <p><span style="font-weight: 300">[My role in this project]</span><br>System development, writing, user
-      study, running interview sessions, data analysis</p>
-    title: TalkingBoogie
-    image: talkingboogie.jpg
-    tags:
-      - <i class='fas fa-book'></i>&nbsp; CHI '20
-      - <i class='fas fa-medal'></i>&nbsp; Honorable Mention
-      - iOS
-      - <i class='fa-brands fa-app-store-ios'></i>&nbsp; App Store
     description: >-
-      Collaborative mobile AAC system for non-verbal children with developmental
-      disabilities and their caregivers
-    slide: chi2020_talkingboogie_slide.pdf
-    paper: chi2020_talkingboogie_paper.pdf
-    appstore: 'https://apps.apple.com/app/id1435744898'
-    id: talkingboogie
-  - category: schoolwork
-    detail: >
-      <p>I believe that one's favourite set of music in a specific period
-      represents own emotion at that period. To prove this, I listed all my
-      favourite songs by each semester. Then, I analyzed the emotion of each song
-      using <a href='https://cyanite.ai'>Cyanite</a>, and I visualized the results
-      with <a href='https://d3js.org'>D3.js</a>.<br></p>
-
-      <p>Well, I was super shocked by the result. For my depressing time, I used
-      to listen to melancholic songs. For my highest period, my playlist was full
-      of happy and energetic songs. Why don't you try with your own
-      playlist?<br></p>
-
-      <p>This design work was submitted as an assignment to Spring 2020 Design
-      Thinking for Communication course.</p>
-
-      <img src='site.baseurl/assets/images/project_detail/P3.jpg' class='modal-image-responsive'
-      alt='Spring 2020 design thinking for communication project image'>
-
-      <hr>
-
-      <p><span style="font-weight: 300">[My role in this project]</span><br>Independent project</p>
-    tags:
-      - Coursework
-      - InfoVis
-      - D3.js
-    image: dt4c_p3.jpg
-    title: Music Knows.
-    description: What my favorite sets of music tell about my emotion
-    id: dt4c_p3
-  - category: schoolwork
-    detail: >
-      <p>It's always fun to imagine things that will never happen XD<br></p>
-
-      <p>In this project, I assumed that well-known tech companies run their own
-      football team in a 'Tech Champions League.' In this tournament, each team
-      competes using own market cap. For this project, I mainly focused on
-      designing small multiples with the following question: What comes to mind
-      immediately when I think of the company?<br></p>
-
-      <p>This design work was submitted as an assignment to Spring 2020 Design
-      Thinking for Communication course.</p>
-
-      <img src='site.baseurl/assets/images/project_detail/P1.jpg' class='modal-image-responsive'
-      alt='Spring 2020 design thinking for communication project image'>
-
-      <hr>
-
-      <p><span style="font-weight: 300">[My role in this project]</span><br>Independent project</p>
-    tags:
-      - Coursework
-      - Small multiple
-      - Illustrator
-    image: dt4c_p1.jpg
-    title: Tech Champion's League
-    description: What if well-known tech companies run their football team?
-    id: dt4c_p1
-  - category:
-      - industry
-    detail: >
-      <p>In this collaborative project among Samsung Research, SNU HCI+d Lab, and
-      Yonsei university, we aimed to
-          design a coherent visual identity for Bixby: a smart agent deployed to Samsung appliances.<br></p>
-      <p>During the study, I took part in developing prototypes and conducting
-      user experiment.</p>
-
-      <img src='site.baseurl/assets/images/project_detail/bixby.jpg' class='modal-image-responsive'
-      alt='Bixby project image'>
-
-      <p style='text-align: center; font-weight: 300;'>Example screen we used
-      during the user study</p>
-
-      <hr>
-
-      <p><span style="font-weight: 300">[My role in this project]</span><br>Prototype development, running
-      experiment, writing</p>
-    tags:
-      - Industry
-      - Experiment
-    image: bixby.jpg
-    title: 'Samsung Bixby'
-    description: Setting up coherent visual identities for Samsung Bixby system
-    id: bixby
-  - category: schoolwork
-    detail: >
-      <p>I worked as an iOS developer at a local micro-mobility sharing startup for two years. During this time, I realized how crucial it is to understand potential users for a service to succeed.</p>
-      
-      <p>To deepen this understanding, I took a 'Digital Ethnography' class, where students explored user groups around a chosen topic. I focused on why users hesitate to ride shared mobility devices and investigated this through ethnographic methods.</p>
-      
-      <p>I conducted observational and interview studies with six college students. Although the scope was limited due to the pandemic, the experience gave me valuable insight into how HCI researchers apply qualitative methods to study real-world user behavior.</p>
-
-      <img src='site.baseurl/assets/images/project_detail/spring2020digiethno.jpg'
-      class='modal-image-responsive' alt='Spring 2020 digital ethnography project image'>
-
-      <hr>
-
-      <p><span style="font-weight: 300">[My role in this project]</span><br>Independent project</p>
-    tags:
-      - Coursework
-      - Micro-mobility
-    image: spring2020digiethno.jpg
-    title: Digital Ethnography
-    description: >-
-      Term paper on needfinding of Korean micro-mobility users submitted to Spring
-      2020 Digital Ethnography course (written in Korean)
-    paper: spring2020_digital-ethnography_report.pdf
-    id: spring2020digiethno
-  - detail: >
-      <p>Although text-based conversational agents (chatbots) hold great potential for journaling diets and managing personal health, they suffer from low user acceptance. To address this issue, we propose incorporating the persona of real-world caregivers into the chatbot.<br></p>
-
-      <p>Working with <a href='https://youjin-h.github.io'>Youjin Hwang</a>, we
-      conducted a series of studies identifying several important linguistic features that make users
-      perceive a chatbot as a real person. (MobileHCI '20 Late-Breaking Result)</p>
-
-      <img src='site.baseurl/assets/images/project_detail/prp.jpg' class='modal-image-responsive'
-      alt='MobileHCI project image'>
-
-      <hr>
-
-      <p><span style="font-weight: 300">[My role in this project]</span><br>Writing</p>
-    tags:
-      - <i class='fas fa-book'></i>&nbsp; MobileHCI '20
-      - Chatbot
-    image: prp.jpg
-    title: PRP
-    description: >-
-      Understanding which linguistic features contribute to forming a persona of a
-      chatbot
-    paper: mobilehci2020_prp_poster.pdf
-    id: prp
-  - detail: >
-      <p>Although text-based conversational agents (chatbots) hold significant potential for diet journaling and health management, they often face low user acceptance. To address this challenge, we propose incorporating the personas of real-world caregivers into the chatbot design.<br></p>
-
-      <p>Led by <a href='https://youjin-h.github.io'>Youjin Hwang</a>, we conducted a series of studies comparing user perceptions of a chatbot across different personas: a doctor, a family member, and no persona. Although the study was carried out using a Wizard-of-Oz methodology, we believe the findings can be extended to automated chatbot systems powered by NLP.<br></p>
-
-      <p>This study was presented in <a
-      href='https://dl.acm.org/doi/10.1145/3334480.3375154'>CHI 2020 Workshop</a>
-      (Conversational Agents for Health and Wellbeing).</p>
-
-      <img src='site.baseurl/assets/images/project_detail/personabot.jpg' class='modal-image-responsive'
-      alt='Personabot project image'>
-
-      <p style='text-align: center; font-weight: 300;'>Three personas applied to
-      a chatbot</p>
-
-      <hr>
-
-      <p><span style="font-weight: 300">[My role in this project]</span><br>System development, running
-      experiment, writing</p>
-    tags:
-      - <i class='fas fa-book'></i>&nbsp; CHI '20
-      - Chatbot
-    image: personabot.jpg
-    title: PersonaBot
-    description: Applying the persona of user's caregivers to health-managing chatbots
-    paper: chi2020_personabot_workshop.pdf
-    id: personabot
-  - category:
-      - industry
-    detail: >
-      <p>Juvis, a Korean company specializing in diet management, needed a way to deliver key information and assist users with reservations. To address this, we designed a chatbot that guided users through the process. This experience deepened my understanding of chatbot design and later inspired a follow-up project on <a href='site.baseurl/assets/pdf/chi2020_personabot_workshop.pdf'>integrating personas into chatbot interactions</a>.</p>
-
-      <img src='site.baseurl/assets/images/project_detail/juvis.jpg' class='modal-image-responsive'
-      alt='Juvis project image'>
-
-      <p style='text-align: center; font-weight: 300;'>Keyscreens of Juvis
-      chatbot</p>
-
-      <hr>
-
-      <p><span style="font-weight: 300">[My role in this project]</span><br>System development</p>
-    tags:
-      - Industry
-      - Chatbot
-    image: juvis.jpg
-    title: Juvis J Bot
-    description: >-
-      A chatbot agent for delivering health information and encouraging user enrollment in Juvis, a Korean diet management company
-    link: 'http://www.juvis.co.kr'
-    id: juvis
-  - category:
-      - industry
-    detail: >
-      <p>For more than 2 years, I worked as an iOS developer at Elecle, an electric mobility-sharing startup based in Korea.<br></p>
-
-      <p>Because every step of renting and returning a mobility device is handled through a mobile app, app development is a critical component of mobility sharing services. Therefore, we have placed strong emphasis on enhancing the app’s usability and usefulness for end-users, and have designed various interaction methods to improve the overall experience.<br></p>
-      
-      <p>Elecle is currently available in more than 5 cities in Korea, including Seoul, Suwon, Bucheon, Gimpo, and Sejong.</p>
-
-      <img src='site.baseurl/assets/images/project_detail/elecle-riding.jpg' class='modal-image-responsive'
-      alt='Me with an Elecle bike'>
-
-      <p style='text-align: center; font-weight: 300;'>Me with an Elecle bike
-      XD</p>
-
-      <img src='site.baseurl/assets/images/project_detail/elecle.jpg' class='modal-image-responsive'
-      alt='Elecle image'>
-
-      <p style='text-align: center; font-weight: 300;'>Keyscreens of Elecle iOS
-      app</p>
-
-      <hr>
-
-      <p><span style="font-weight: 300">[My role in this project]</span><br>System development, design
-      ideation</p>
-    tags:
-      - Startup
-      - iOS
-      - <i class='fa-brands fa-app-store-ios'></i>&nbsp; App Store
-    image: elecle.jpg
-    title: elecle
-    description: 'Elecle: Electric mobility-sharing startup (worked as an iOS developer)'
-    appstore: 'https://apps.apple.com/app/id1456461872'
-    link: 'https://elecle.bike'
-    id: elecle
-  - category: personal
-    detail: >
-      <p>I found it incredibly difficult to keep track of the courses I took in college, and I was surprised to learn that many others faced the same problem.<br></p>
-
-      <p>To simplify the process, I developed an iOS app called ECE Grad. This app helps ECE undergrads easily track the courses they've completed and see how many credits they still need. It also automatically visualizes their course history and provides encouraging messages to motivate them to stay on top of their academic progress.<br></p>
-
-      <p>However, some users mentioned that manually entering courses into the system was a bit time-consuming. Based on their feedback, I added a crawling function to streamline the process: by simply entering their SNU credentials, the system automatically retrieves the relevant course data.</p>
-
-      <img src='site.baseurl/assets/images/project_detail/ecegrad.jpg' class='modal-image-responsive'
-      alt='ECE grad project image'>
-
-      <p style='text-align: center; font-weight: 300;'>Keyscreens of ECE
-      grad</p>
-
-      <hr>
-
-      <p><span style="font-weight: 300">[My role in this project]</span><br>Independent project</p>
-    tags:
-      - Personal
-      - iOS
-    image: ecegrad.jpg
-    title: ECE Grad
-    description: Graduation managing app for SNU ECE undergrads
-    appstore: 'https://apps.apple.com/app/id1450808330'
-    id: ecegrad
-  - category: personal
-    detail: >
-      <p>When I began my internship at the HCI+d Lab, I noticed that the website was somewhat outdated. I collaborated with my labmates to redesign it using a previously created template and updated it with the lab members' profiles.<br></p>
-
-      <p>It was a great experience contributing to the lab with my skillsets!</p>
-
-      <img src='site.baseurl/assets/images/project_detail/lab_website.jpg' class='modal-image-responsive'
-      alt='Designing a lab website'>
-
-      <p style='text-align: center; font-weight: 300;'>My profiile here:)</p>
-
-      <hr>
-
-      <p><span style="font-weight: 300">[My role in this project]</span><br>Development, design</p>
-    tags:
-      - Design
-      - Web
-    image: lab_website.jpg
-    title: HCI+d Website
-    description: Designing & developing a website for HCI+d Lab.
-    link: 'http://hcid.snu.ac.kr'
-    id: hcidweb
+      Faster, more relevant streaming discovery for time-pressed users
+    id: metime
