@@ -1,6 +1,7 @@
 ---
 layout: publication
 title: "From Dashboards to Dialogue: Evaluating a Conversational AI Coach for Performance Driving Skill Development"
+slug: conversational-ai-coach-2025
 year: 2025
 month: 9
 authors:
@@ -14,15 +15,16 @@ authors:
   - Andrew Best
   - Guy Rosman
   - Tiffany Chen
-venue: AutomotiveUI ’25 (accepted)
+venue: "AutomotiveUI ’25 (accepted)"
 venue_full: "Proceedings of the 17th International Conference on Automotive User Interfaces and Interactive Vehicular Applications, 2025"
-abstract: "We evaluate an in-vehicle conversational agent that coaches performance driving. Through mixed-methods studies, we compare dialog-based coaching against dashboard-style feedback and report impacts on skill acquisition, workload, and user trust."
+abstract: >-
+  We evaluate an in-vehicle conversational agent that coaches performance driving. Through mixed-methods studies, we
+  compare dialog-based coaching against dashboard-style feedback and report impacts on skill acquisition, workload, and trust.
 category:
-  - "HMI"
-  - "Automotive"
-  - "AI Coaching"
+  - HMI
+  - Automotive
+  - AI Coaching
 featured: true
----
-
-pdf: true
+hero: conversational-ai-coach-2025.jpg
+pdf: true   # expects /assets/pdf/conversational-ai-coach-2025.pdf
 ---
