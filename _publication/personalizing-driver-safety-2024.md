@@ -18,8 +18,7 @@ authors:
   - et al.
 venue: "Scientific Reports 14(1), 18058"
 venue_full: "Scientific Reports, volume 14, article 18058 (2024)"
-abstract: >-
-"Recent advances in AI and intelligent vehicle technology hold the promise of revolutionizing mobility
+abstract: >- "Recent advances in AI and intelligent vehicle technology hold the promise of revolutionizing mobility
 and transportation through advanced driver assistance systems (ADAS). Certain cognitive factors,
 such as impulsivity and inhibitory control have been shown to relate to risky driving behavior and
 on-road risk-taking. However, existing systems fail to leverage such factors in assistive driving
