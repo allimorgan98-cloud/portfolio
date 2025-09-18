@@ -17,9 +17,9 @@ authors:
   - Tiffany Chen
 venue: "AutomotiveUI ’25 (accepted)"
 venue_full: "Proceedings of the 17th International Conference on Automotive User Interfaces and Interactive Vehicular Applications, 2025"
-abstract: >-
-  We evaluate an in-vehicle conversational agent that coaches performance driving. Through mixed-methods studies, we
-  compare dialog-based coaching against dashboard-style feedback and report impacts on skill acquisition, workload, and trust.
+Description: >-
+  We evaluate an in-vehicle conversational agent that provides personalized feedback for performance skill training. Through mixed-methods studies, we
+  compare dialogue-based coaching against dashboard-style data centric feedback and report impacts on skill acquisition, workload, and trust.
 category:
   - HMI
   - Automotive
