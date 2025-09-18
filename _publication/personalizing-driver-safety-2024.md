@@ -19,7 +19,7 @@ authors:
 venue: "Scientific Reports 14(1), 18058"
 venue_full: "Scientific Reports, volume 14, article 18058 (2024)"
 abstract: >-
-Recent advances in AI and intelligent vehicle technology hold the promise of revolutionizing mobility
+"Recent advances in AI and intelligent vehicle technology hold the promise of revolutionizing mobility
 and transportation through advanced driver assistance systems (ADAS). Certain cognitive factors,
 such as impulsivity and inhibitory control have been shown to relate to risky driving behavior and
 on-road risk-taking. However, existing systems fail to leverage such factors in assistive driving
@@ -35,7 +35,7 @@ these inferred factors to determine instantly whether or not to engage a driver 
 This approach was evaluated using leave-one-out cross validation using actual human data. Our
 evaluations reveal that our personalized driver safety interface that captures the cognitive profile
 of the driver is more effective in influencing driver behavior in yellow light zones by reducing their
-inclination to run through them.
+inclination to run through them."
 
 category:
   - Human Factors
