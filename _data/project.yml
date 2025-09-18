@@ -18,7 +18,7 @@ project:
     id: conversational-coach
 
   - title: Computational Teaching via Multi-Task Imitation Learning
-    image: icra-2024-imitation-teaching.png
+    image: icra-2025-imitation-teaching.png
     detail: >
       <p>Built reliable <b>capture and evaluation pipelines</b> supporting multi-task imitation learning for driving skills. Standardized time-sync across simulator I/O, eye-tracking, and physio; defined user-centered success metrics in partnership with engineering.</p>
 
