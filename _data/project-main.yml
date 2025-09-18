@@ -1,30 +1,98 @@
 project:
-  - title: "From Dashboards to Dialogue"
-    venue: AutomotiveUI ’25
-    image: conversational-ai-coach-2025-thumb.png
-    slug: conversational-ai-coach-2025
+  - title: "Conversational AI Coach for Performance Driving"
+    venue: "AutomotiveUI ’25"
+    image: conversational-ai-coach-2025.png         # assets/images/main-project/…
+    slug: conversational-ai-coach-2025              # maps to /publication/conversational-ai-coach-2025/
+    id: conversational-coach
+    description: "Dialog-based coaching vs. dashboards: evaluation and design implications"
+    detail: >-
+      <p>Mixed-methods evaluation of a <b>dialog-based in-vehicle coach</b> vs. dashboard feedback. Ran simulator and in-vehicle studies, synchronized eye-tracking, physiological, and performance signals, and delivered decision-ready readouts that informed coaching flow changes.</p>
+      <img src="site.baseurl/assets/images/project_detail/conversational-coach.jpg" class="modal-image-responsive" alt="Conversational coach keyscreen">
+      <hr>
+      <p><span style="font-weight:300">[My role]</span><br>Lead UXR — study design, instrumentation QA, analysis, stakeholder readout</p>
 
-  - title: "Computational Teaching for Driving"
-    venue: ICRA 2025
-    image: icra-2025-thumb.jpg
+  - title: "Computational Teaching via Multi-Task Imitation Learning"
+    venue: "ICRA ’25"
+    image: icra-2025-imitation-teaching.png
     slug: icra-2025-imitation-teaching
+    id: icra-mtil
+    description: "Time-synced multimodal capture and user-centered evaluation for IL"
+    detail: >-
+      <p>Built reliable <b>capture and evaluation pipelines</b> supporting multi-task imitation learning for driving skills. Standardized time-sync across simulator I/O, eye-tracking, and physio; defined user-centered success metrics in partnership with engineering.</p>
+      <img src="site.baseurl/assets/images/project_detail/icra-mtil.jpg" class="modal-image-responsive" alt="ICRA project schematic">
+      <hr>
+      <p><span style="font-weight:300">[My role]</span><br>UXR & data quality lead — instrumentation, metrics, analysis</p>
 
-  - title: "A Data-Driven Framework for Skill Representation"
-    venue: HRI ’25 (LEAP-HRI)
-    image: skill-representation-2025-thumb.png
-    slug: skill-representation-2025
-
-  - title: "Gliding on Simulated Ice"
-    venue: AutomotiveUI 2024
-    image: gliding-on-simulated-ice-2024-thumb.png
-    slug: gliding-on-simulated-ice-2024
-
-  - title: "Task Decomposition for Advanced Driving Skills"
-    venue: ACC 2025
+  - title: "Task Decomposition for Learning Advanced Driving Skills"
+    venue: "ACC ’25"
     image: task-decomposition-acc-2025.png
     slug: task-decomposition-acc-2025
+    id: acc-task-decomposition
+    description: "Structuring complex skills with hierarchical decomposition"
+    detail: >-
+      <p>Studied <b>hierarchical task decomposition</b> to structure learning of complex performance-driving behaviors; informed training sequence and evaluation measures for coaching.</p>
+      <img src="site.baseurl/assets/images/project_detail/acc-task-decomp.jpg" class="modal-image-responsive" alt="Task decomposition concept">
+      <hr>
+      <p><span style="font-weight:300">[My role]</span><br>Study design & analysis — protocol, metrics, synthesis</p>
+
+  - title: "Gliding on Simulated Ice — Low-μ Drift Training"
+    venue: "AutomotiveUI ’24"
+    image: gliding-on-simulated-ice-2024.png
+    slug: gliding-on-simulated-ice-2024
+    id: low-mu-drift
+    description: "Does simulated low-μ improve drift training and transfer?"
+    detail: >-
+      <p>Evaluated simulated low-friction (<b>low-μ</b>) environments for drift training; analyzed learning and transfer in a controlled simulator study and informed HMI safety cues.</p>
+      <img src="site.baseurl/assets/images/project_detail/low-mu-drift.jpg" class="modal-image-responsive" alt="Low-μ drift training">
+      <hr>
+      <p><span style="font-weight:300">[My role]</span><br>Study design, instrumentation, data analysis</p>
+
+  - title: "Personalizing Driver Safety Interfaces"
+    venue: "Scientific Reports ’24"
+    image: personalizing-driver-safety-2024.png
+    slug: personalizing-driver-safety-2024
+    id: sci-rep-cognitive-factors
+    description: "From cognitive factors to personalized safety interfaces"
+    detail: >-
+      <p>Linked inferred <b>cognitive factors</b> to driving outcomes to personalize safety HMI. Contributed to mixed-methods analysis and measurable interface recommendations.</p>
+      <img src="site.baseurl/assets/images/project_detail/cognitive-factors.jpg" class="modal-image-responsive" alt="Personalization framework">
+      <hr>
+      <p><span style="font-weight:300">[My role]</span><br>Measures design, analysis, recommendations</p>
+
+  - title: "HMIway-env — Human–AI Teaming Simulation"
+    venue: "CVPR ’22"
+    image: hmiway-env-2022.png
+    slug: hmiway-env-2022
+    id: hmiway-env
+    description: "Simulating behaviors/preferences to evaluate teaming & HMI"
+    detail: >-
+      <p>Simulation framework modeling <b>driver behaviors and preferences</b> to test human–AI teaming strategies and HMI interventions.</p>
+      <img src="site.baseurl/assets/images/project_detail/hmiway-env.jpg" class="modal-image-responsive" alt="HMIway-env schematic">
+      <hr>
+      <p><span style="font-weight:300">[My role]</span><br>UXR support — experimental scenarios, study measures, reporting</p>
+
+  - title: "Skill Representation for Coaching"
+    venue: "HRI ’25 Workshop"
+    image: skill-representation-2025.png
+    slug: skill-representation-2025
+    id: hri-skill-representation
+    description: "A schema for representing skills from multimodal traces"
+    detail: >-
+      <p>Proposed a <b>data-driven schema</b> to represent driving skills from multimodal traces, enabling analysis, feedback, and coaching policies.</p>
+      <img src="site.baseurl/assets/images/project_detail/skill-representation.jpg" class="modal-image-responsive" alt="Skill representation concept">
+      <hr>
+      <p><span style="font-weight:300">[My role]</span><br>Co-author — framing, analysis, narrative</p>
 
   - title: "MeTime — Personalized Streaming Discovery"
-    image: "metime-cover.png"
-    venue: "UCSD • 2021"
-    slug: "metime"
+    venue: "UCSD"
+    image: metime-cover.png
+    # If you don't have a publication page, give an explicit URL instead of slug:
+    url: /project/metime/
+    id: metime
+    description: "Faster, more relevant streaming discovery for time-pressed users"
+    detail: >-
+      <p>UCSD app concept to <b>cut time-to-decision</b> for busy streamers. Designed flows and hi-fi prototype with Karam: <b>Taste Curation</b> (quick preference quiz), <b>Randomizer</b> (one-tap play), <b>Tags search</b>, and <b>Saved-content filter</b>.</p>
+      <img src="site.baseurl/assets/images/project_detail/metime-home.jpg" class="modal-image-responsive" alt="MeTime home screen">
+      <p style="text-align:center;font-weight:300;">Home · Tags · Randomizer · Taste Curation</p>
+      <hr>
+      <p><span style="font-weight:300">[My role]</span><br>Co-designer — research, IA, flows, hi-fi prototype</p>
