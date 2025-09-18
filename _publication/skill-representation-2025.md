@@ -15,7 +15,7 @@ authors:
 venue: "LEAP-HRI Workshop @ HRI 2025"
 venue_full: "LEAP-HRI Workshop at the ACM/IEEE International Conference on Human-Robot Interaction (HRI 2025)"
 abstract: 
-  Understanding and modeling human skill is critical
+  "Understanding and modeling human skill is critical
 for advancing human-robot and human-AI interaction, particularly
 in domains requiring nuanced cooperation and long-term
 personalization. Effective collaboration depends on aligning AI
@@ -31,7 +31,7 @@ skill representations from track-driving trajectory data. This
 foundation enables applications such as personalized coaching,
 skill-targeted challenges, and adaptive robotic interventions.
 Ultimately, we aim to democratize HPDE by making high-quality
-instruction more accessible through AI-driven personalization.
+instruction more accessible through AI-driven personalization."
 
 category:
   - HRI
