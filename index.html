@@ -17,13 +17,13 @@ description: UX Researcher
   .home-project-container{border:1px solid #eee;border-radius:12px;padding:12px;background:var(--bs-body-bg,#fff)}
   .home-project-venue{margin-left:.4rem;color:#666;font-weight:400}
   .home-view-all{font-weight:600;text-decoration:none}
+  .debug-url{display:block;font-size:.75rem;color:#888;margin-top:.25rem;word-break:break-all}
   @media (max-width:576px){.home-project-link{width:180px}}
 </style>
 
 <div class="container pt-3 pb-4">
   <div class="container vertical-center">
     <div class="row">
-
       <!-- TEXT COLUMN -->
       <div class="col-12 col-md-8 col-xxl-9 px-0 align-self-center">
         <h4>Allison Morgan</h4>
@@ -51,7 +51,6 @@ description: UX Researcher
           loading="lazy"
         />
       </div>
-
     </div>
   </div>
 
@@ -68,30 +67,46 @@ description: UX Researcher
 <div class="container">
   <p class="section-title">Recent projects</p>
 
-  <div class="home-project-scroller">
-    <div class="home-project-scroller-inner">
-      {% for project in projects %}
-        {% if project.url %}
-          {% assign href = project.url %}
-        {% else %}
-          {% assign href = project.slug | prepend: 'publication/' %}
-        {% endif %}
+  {% if projects and projects.size > 0 %}
+    <div class="home-project-scroller" data-animated>
+      <div class="home-project-scroller-inner">
+        {% for project in projects %}
+          {% if project.url %}
+            {% assign href = project.url %}
+          {% else %}
+            {% assign href = project.slug | prepend: 'publication/' %}
+          {% endif %}
 
-        <a href="{{ href | relative_url }}" class="home-project-link">
-          <div class="home-project-container non-select">
-            <img
-              src="{{ '/assets/images/project/' | append: project.image | relative_url }}"
-              alt="{{ project.title }}"
-              style="height:auto;width:100%;"
-              loading="lazy">
-            <p class="pt-2 mt-md-2 text-center" style="font-size:.8rem;">
-              {{ project.title }}{% if project.venue %}<span class="home-project-venue">{{ project.venue }}</span>{% endif %}
-            </p>
-          </div>
-        </a>
-      {% endfor %}
+          {% comment %}
+            Use the thumbnails folder that actually contains your images.
+            If your files are under /assets/images/main-project/, keep this path.
+            If you truly moved them to /assets/images/project/, change the folder below accordingly.
+          {% endcomment %}
+          {% assign img_path = '/assets/images/project/' | append: project.image | relative_url %}
+
+          <a href="{{ href | relative_url }}" class="home-project-link">
+            <div class="home-project-container non-select">
+              <img
+                src="{{ img_path }}"
+                alt="{{ project.title }}"
+                style="height:auto;width:100%;"
+                loading="lazy"
+                onerror="this.onerror=null;this.src='{{ '/assets/images/main-project/placeholder.jpg' | relative_url }}';"
+              >
+              <p class="pt-2 mt-md-2 text-center" style="font-size:.8rem;">
+                {{ project.title }}{% if project.venue %}<span class="home-project-venue">{{ project.venue }}</span>{% endif %}
+              </p>
+
+              {%- comment -%} Remove this <small> after you’ve verified paths {%- endcomment -%}
+              <small class="debug-url">{{ img_path }}</small>
+            </div>
+          </a>
+        {% endfor %}
+      </div>
     </div>
-  </div>
+  {% else %}
+    <p class="text-muted">No projects found. Check <code>_data/project-main.yml</code> (key: <code>project:</code>) and image filenames.</p>
+  {% endif %}
 
   <div class="d-flex flex-row-reverse mt-4">
     <a href="{{ '/project/' | relative_url }}" class="home-view-all">&gt; View All</a>
@@ -100,18 +115,17 @@ description: UX Researcher
 </div>
 
 <script>
-  function addAnimation(scrollers){
+  (function(){
+    const scrollers = document.querySelectorAll(".home-project-scroller");
     scrollers.forEach((scroller)=>{
-      scroller.setAttribute("data-animated", true);
       const scrollerInner = scroller.querySelector(".home-project-scroller-inner");
-      const scrollerContent = Array.from(scrollerInner.children);
-      scrollerContent.forEach((item)=>{
+      const kids = Array.from(scrollerInner.children);
+      // Duplicate once so the marquee loops
+      kids.forEach((item)=>{
         const dup = item.cloneNode(true);
-        dup.setAttribute("aria-hidden", true);
+        dup.setAttribute("aria-hidden", "true");
         scrollerInner.appendChild(dup);
       });
     });
-  }
-  const scrollers = document.querySelectorAll(".home-project-scroller");
-  addAnimation(scrollers);
+  })();
 </script>
