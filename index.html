@@ -11,17 +11,13 @@ description: UX Researcher
   .section-title{font-weight:600;margin:.25rem 0 1rem;}
   .home-project-scroller{overflow:hidden;position:relative}
   .home-project-scroller-inner{display:flex;gap:1rem;width:max-content}
-  .home-project-scroller[data-animated] .home-project-scroller-inner{
-    animation: home-scroll 45s linear infinite;
-  }
-  @keyframes home-scroll{
-    to{ transform: translateX(calc(-50% - .5rem)); } /* 50% because we duplicate once */
-  }
+  .home-project-scroller[data-animated] .home-project-scroller-inner{animation:home-scroll 45s linear infinite}
+  @keyframes home-scroll{to{transform:translateX(calc(-50% - .5rem))}}
   .home-project-link{display:block;width:220px;flex:0 0 auto;text-decoration:none;color:inherit}
   .home-project-container{border:1px solid #eee;border-radius:12px;padding:12px;background:var(--bs-body-bg,#fff)}
   .home-project-venue{margin-left:.4rem;color:#666;font-weight:400}
   .home-view-all{font-weight:600;text-decoration:none}
-  @media (max-width:576px){ .home-project-link{width:180px} }
+  @media (max-width:576px){.home-project-link{width:180px}}
 </style>
 
 <div class="container pt-3 pb-4">
@@ -32,17 +28,17 @@ description: UX Researcher
       <div class="col-12 col-md-8 col-xxl-9 px-0 align-self-center">
         <h4>Allison Morgan</h4>
 
-       <p class="mt-3">
-  I’m a UX &amp; Human Factors researcher who plans and runs end-to-end human-subjects studies across lab, field, and remote settings. I combine qualitative methods with multimodal data (eye-tracking, wearables/physiology, XR) to turn complex signals into clear, decision-ready insights for interfaces and products.
-</p>
-<p>
-  I partner closely with design, product, and engineering to scope research questions, build reliable ops and instrumentation pipelines (recruiting, IRB, QA, data governance), and deliver findings that improve usability, safety, and overall experience.
-</p>
-<p>
-  I earned my B.S. in Cognitive &amp; Behavioral Neuroscience from
-  <a href="https://ucsd.edu">UC San Diego</a>. I’m excited about cross-device experiences, meaningful/repairable hardware, and responsible AI features that are inclusive and genuinely useful.
-</p>
-
+        <p class="mt-3">
+          I’m a UX &amp; Human Factors researcher who plans and runs end-to-end human-subjects studies across lab, field, and remote settings. I combine qualitative methods with multimodal data (eye-tracking, wearables/physiology, XR) to turn complex signals into clear, decision-ready insights for interfaces and products.
+        </p>
+        <p>
+          I partner closely with design, product, and engineering to scope research questions, build reliable ops and instrumentation pipelines (recruiting, IRB, QA, data governance), and deliver findings that improve usability, safety, and overall experience.
+        </p>
+        <p>
+          I earned my B.S. in Cognitive &amp; Behavioral Neuroscience from
+          <a href="https://ucsd.edu">UC San Diego</a>. I’m excited about cross-device experiences, meaningful/repairable
+          hardware, and responsible AI features that are inclusive and genuinely useful.
+        </p>
       </div>
 
       <!-- IMAGE COLUMN -->
@@ -80,12 +76,14 @@ description: UX Researcher
         {% else %}
           {% assign href = project.slug | prepend: 'publication/' %}
         {% endif %}
+
         <a href="{{ href | relative_url }}" class="home-project-link">
           <div class="home-project-container non-select">
             <img
               src="{{ '/assets/images/project/' | append: project.image | relative_url }}"
               alt="{{ project.title }}"
-              style="height:auto;width:100%;">
+              style="height:auto;width:100%;"
+              loading="lazy">
             <p class="pt-2 mt-md-2 text-center" style="font-size:.8rem;">
               {{ project.title }}{% if project.venue %}<span class="home-project-venue">{{ project.venue }}</span>{% endif %}
             </p>
@@ -117,4 +115,3 @@ description: UX Researcher
   const scrollers = document.querySelectorAll(".home-project-scroller");
   addAnimation(scrollers);
 </script>
-
