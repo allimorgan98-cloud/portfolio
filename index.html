@@ -5,9 +5,9 @@ description: UX Researcher
 ---
 
 {% assign projects = site.data.project-main.project %}
+{% assign thumb_dir = '/assets/images/project/' %}
 
 <style>
-  /* ===== Recent projects strip ===== */
   .section-title{font-weight:600;margin:.25rem 0 1rem;}
   .home-project-scroller{overflow:hidden;position:relative}
   .home-project-scroller-inner{display:flex;gap:1rem;width:max-content}
@@ -43,12 +43,12 @@ description: UX Researcher
       <!-- IMAGE COLUMN -->
       <div class="col-12 col-md-4 col-xxl-3 align-self-center text-center">
         <img
-          src="{{ '/assets/images/project/allison.jpg' | relative_url }}"
+          src="{{ '/assets/image/project/allison.jpg' | relative_url }}"
           alt="Headshot of Allison Morgan"
           class="w-100"
           style="max-width:225px;"
           loading="lazy"
-        />
+        >
       </div>
     </div>
   </div>
@@ -70,33 +70,29 @@ description: UX Researcher
     <div class="home-project-scroller" data-animated>
       <div class="home-project-scroller-inner">
         {% for project in projects %}
-          {% if project.url %}
-            {% assign href = project.url %}
+          {%- comment -%} Build href: absolute URLs untouched; relative slugs go through relative_url {%- endcomment -%}
+          {% assign href = project.url %}
+          {% if href %}
+            {% assign is_abs = href contains '://' %}
           {% else %}
             {% assign href = project.slug | prepend: 'publication/' %}
+            {% assign is_abs = false %}
           {% endif %}
 
-          {% comment %}
-            Use the thumbnails folder that actually contains your images.
-            If your files are under /assets/images/main-project/, keep this path.
-            If you truly moved them to /assets/images/project/, change the folder below accordingly.
-          {% endcomment %}
-          {% assign img_path = '/assets/images/project/' | append: project.image | relative_url %}
+          {% assign img_path = thumb_dir | append: project.image | relative_url %}
 
-          <a href="{{ href | relative_url }}" class="home-project-link">
+          <a href="{% if is_abs %}{{ href }}{% else %}{{ href | relative_url }}{% endif %}" class="home-project-link">
             <div class="home-project-container non-select">
               <img
                 src="{{ img_path }}"
                 alt="{{ project.title }}"
                 style="height:auto;width:100%;"
                 loading="lazy"
-                onerror="this.onerror=null;this.src='{{ '/assets/images/main-project/placeholder.jpg' | relative_url }}';"
+                onerror="this.onerror=null;this.src='{{ thumb_dir | append: 'placeholder.jpg' | relative_url }}';"
               >
               <p class="pt-2 mt-md-2 text-center" style="font-size:.8rem;">
                 {{ project.title }}{% if project.venue %}<span class="home-project-venue">{{ project.venue }}</span>{% endif %}
               </p>
-
-              {%- comment -%} Remove this <small> after you’ve verified paths {%- endcomment -%}
               <small class="debug-url">{{ img_path }}</small>
             </div>
           </a>
@@ -109,7 +105,6 @@ description: UX Researcher
 
   <div class="d-flex flex-row-reverse mt-4">
     <a href="{{ '/project/' | relative_url }}" class="home-view-all">&gt; View All</a>
-    <!-- If you don't have a /project/ page yet, change to {{ '/publication/' | relative_url }} -->
   </div>
 </div>
 
@@ -118,8 +113,8 @@ description: UX Researcher
     const scrollers = document.querySelectorAll(".home-project-scroller");
     scrollers.forEach((scroller)=>{
       const scrollerInner = scroller.querySelector(".home-project-scroller-inner");
+      if(!scrollerInner) return;
       const kids = Array.from(scrollerInner.children);
-      // Duplicate once so the marquee loops
       kids.forEach((item)=>{
         const dup = item.cloneNode(true);
         dup.setAttribute("aria-hidden", "true");
