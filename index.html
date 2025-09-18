@@ -65,46 +65,33 @@ description: UX Researcher
 <div class="container">
   <p class="section-title">Recent projects</p>
 
+  {% assign projects = site.data.project-main.project %}
+  {% assign thumb_dir = '/assets/images/project/' %}
+
   {% if projects and projects.size > 0 %}
     <div class="home-project-scroller" data-animated>
       <div class="home-project-scroller-inner">
-        {% for project in projects %}
 
-        
+        {% for project in projects %}
+          {%- comment -%} Resolve slug from data or /publication/<slug> URL {%- endcomment -%}
           {% assign pub_slug = project.slug %}
-          {% if pub_slug == nil and project.url %}
-            {% if project.url contains '/publication/' %}
-              {% assign pub_slug = project.url | split: '/publication/' | last | split: '/' | first %}
-            {% endif %}
+          {% if pub_slug == nil and project.url and project.url contains '/publication/' %}
+            {% assign pub_slug = project.url | split: '/publication/' | last | split: '/' | first %}
           {% endif %}
 
-          {%- comment -%}
-            Find the publication doc in the collection by slug.
-            (Jekyll sets doc.slug from the filename if not provided explicitly.)
-          {%- endcomment -%}
+          {%- comment -%} Find publication doc {%- endcomment -%}
           {% assign doc = nil %}
           {% if pub_slug %}
             {% assign doc = site.publication | where: "slug", pub_slug | first %}
           {% endif %}
 
-          {%- comment -%}
-            Href: absolute project.url untouched; otherwise /publication/<slug>
-          {%- endcomment -%}
+          {%- comment -%} Build href (absolute URLs untouched) {%- endcomment -%}
           {% assign href = project.url %}
-          {% if href %}
-            {% assign is_abs = href contains '://' %}
-          {% else %}
+          {% unless href %}
             {% assign href = pub_slug | prepend: 'publication/' %}
-            {% assign is_abs = false %}
-          {% endif %}
+          {% endunless %}
 
-          {%- comment -%}
-            Image:
-            - Prefer project.image from data file (thumb_dir + filename)
-            - Else if doc.hero is set, use it (prefix with thumb_dir if it’s just a filename)
-            - Else fallback to /assets/images/project/<slug>.png
-          {%- endcomment -%}
-          {% assign img_path = nil %}
+          {%- comment -%} Resolve image path {%- endcomment -%}
           {% if project.image %}
             {% assign img_path = thumb_dir | append: project.image %}
           {% elsif doc and doc.hero %}
@@ -119,55 +106,44 @@ description: UX Researcher
           {% endif %}
           {% assign img_path = img_path | relative_url %}
 
-          {%- comment -%}
-            Tags row:
-            - Use project.tags if present in data (lets you override)
-            - Otherwise pull from the publication doc:
-              category (array/string) → categories → tags
-          {%- endcomment -%}
+          {%- comment -%} Tags / categories (arrays expected) {%- endcomment -%}
           {% assign tags = project.tags %}
           {% if tags == nil and doc %}
             {% assign tags = doc.category | default: doc.categories | default: doc.tags %}
           {% endif %}
 
-          <a href="{% if is_abs %}{{ href }}{% else %}{{ href | relative_url }}{% endif %}" class="home-project-link">
+          {%- comment -%} Titles without nested parentheses in filters {%- endcomment -%}
+          {% assign card_title = project.title | default: doc.title %}
+          {% unless card_title %}{% assign card_title = 'Project' %}{% endunless %}
+          {% assign venue = project.venue | default: doc.venue %}
+
+          <a href="{% if href and href contains '://' %}{{ href }}{% else %}{{ href | relative_url }}{% endif %}" class="home-project-link">
             <div class="home-project-container non-select">
-              <img
-                src="{{ img_path }}"
-                alt="{{ project.title | default: (doc.title | default: 'Project image') }}"
-                style="height:auto;width:100%;"
-                loading="lazy"
-                onerror="this.onerror=null;this.src='{{ thumb_dir | append: 'placeholder.jpg' | relative_url }}';"
-              >
+              <img src="{{ img_path }}" alt="{{ card_title }}" style="height:auto;width:100%;" loading="lazy"
+                   onerror="this.onerror=null;this.src='{{ thumb_dir | append: 'placeholder.jpg' | relative_url }}';">
               <p class="pt-2 mt-md-2 text-center" style="font-size:.8rem;">
-                {{ project.title | default: doc.title }}
-                {% assign venue = project.venue | default: doc.venue %}
-                {% if venue %}<span class="home-project-venue">{{ venue }}</span>{% endif %}
+                {{ card_title }}{% if venue %}<span class="home-project-venue">{{ venue }}</span>{% endif %}
               </p>
 
-              {% if tags %}
-                {% assign tag_list = tags %}
-                {% unless tags.respond_to? %}{% endunless %}
+              {% if tags and tags.size > 0 %}
                 <div class="home-project-tags">
-                  {% if tag_list instanceof String %}
-                    <span class="home-tag">{{ tag_list }}</span>
-                  {% else %}
-                    {% for tag in tag_list %}
-                      <span class="home-tag">{{ tag }}</span>
-                    {% endfor %}
-                  {% endif %}
+                  {% for tag in tags %}
+                    <span class="home-tag">{{ tag }}</span>
+                  {% endfor %}
                 </div>
               {% endif %}
             </div>
           </a>
         {% endfor %}
+
       </div>
     </div>
   {% else %}
-    <p class="text-muted">No projects found. Check <code>_data/project-main.yml</code> (key: <code>project:</code>), and that your publication files exist in <code>_publication/</code>.</p>
+    <p class="text-muted">No projects found. Check <code>_data/project-main.yml</code> (key: <code>project:</code>) and your <code>_publication/</code> slugs.</p>
   {% endif %}
 
   <div class="d-flex flex-row-reverse mt-4">
     <a href="{{ '/project/' | relative_url }}" class="home-view-all">&gt; View All</a>
   </div>
 </div>
+
