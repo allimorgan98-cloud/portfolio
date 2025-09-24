@@ -128,7 +128,7 @@ project:
   - title: MeTime — Personalized Streaming Discovery
     image: metime-cover.png
     detail: >
-      <p>UCSD app concept to <b>cut time-to-decision</b> for busy streamers. Designed flows and hi-fi prototype with Karam: <b>Taste Curation</b> (quick preference quiz), <b>Randomizer</b> (one-tap play), <b>Tags search</b>, and <b>Saved-content filter</b>.</p>
+      <p>UCSD app concept to <b>cut time-to-decision</b> for busy streamers. Designed flows and hi-fi prototype with a team of designers: <b>Taste Curation</b> (quick preference quiz), <b>Randomizer</b> (one-tap play), <b>Tags search</b>, and <b>Saved-content filter</b>.</p>
 
       <img src='site.baseurl/assets/images/project_detail/metime-home.jpg' class='modal-image-responsive' alt='MeTime home screen'>
 
