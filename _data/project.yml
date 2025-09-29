@@ -94,7 +94,7 @@ project:
     detail: >
       <p>Simulation framework modeling <b>driver behaviors and preferences</b> to test human–AI teaming strategies and HMI interventions.</p>
 
-      <img src='site.baseurl/assets/images/project/hmi-env-proces.png' class='modal-image-responsive' alt='HMIway-env schematic'>
+      <img src='site.baseurl/assets/images/project/hmi-env-process.png' class='modal-image-responsive' alt='HMIway-env schematic'>
 
       <hr>
 
