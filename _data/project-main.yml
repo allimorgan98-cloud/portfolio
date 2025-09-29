@@ -7,7 +7,7 @@ project:
     description: "Dialog-based coaching vs. dashboards: evaluation and design implications"
     detail: >-
       <p>Mixed-methods evaluation of a <b>dialog-based in-vehicle coach</b> vs. dashboard feedback. Ran simulator and in-vehicle studies, synchronized eye-tracking, physiological, and performance signals, and delivered decision-ready readouts that informed coaching flow changes.</p>
-      <img src="site.baseurl/assets/images/project_detail/conversational-coach.jpg" class="modal-image-responsive" alt="Conversational coach keyscreen">
+      <img src="site.baseurl/assets/images/project/conversational-ai-coach-2025.png" class="modal-image-responsive" alt="Conversational coach keyscreen">
       <hr>
       <p><span style="font-weight: 300">[My role]</span><br>Lead UXR — study design, instrumentation QA, analysis, stakeholder readout</p>
     tags:
@@ -71,7 +71,7 @@ project:
     description: "From cognitive factors to personalized safety interfaces"
     detail: >-
       <p>Linked inferred <b>cognitive factors</b> to driving outcomes to personalize safety HMI. Contributed to mixed-methods analysis and measurable interface recommendations.</p>
-      <img src="site.baseurl/assets/images/project_detail/cognitive-factors.jpg" class="modal-image-responsive" alt="Personalization framework">
+      <img src="site.baseurl/assets/images/project/personalizing-driver-safety-2024.png" class="modal-image-responsive" alt="Personalization framework">
       <hr>
       <p><span style="font-weight: 300">[My role]</span><br>Measures design, analysis, recommendations</p>
     tags:
@@ -87,7 +87,7 @@ project:
     description: "Simulating behaviors/preferences to evaluate teaming & HMI"
     detail: >-
       <p>Simulation framework modeling <b>driver behaviors and preferences</b> to test human–AI teaming strategies and HMI interventions.</p>
-      <img src="site.baseurl/assets/images/project_detail/hmiway-env.jpg" class="modal-image-responsive" alt="HMIway-env schematic">
+      <img src="site.baseurl/assets/images/project/hmi-env-process.png" class="modal-image-responsive" alt="HMIway-env schematic">
       <hr>
       <p><span style="font-weight: 300">[My role]</span><br>UXR support — experimental scenarios, study measures, reporting</p>
     tags:
@@ -103,7 +103,7 @@ project:
     description: "A schema for representing skills from multimodal traces"
     detail: >-
       <p>Proposed a <b>data-driven schema</b> to represent driving skills from multimodal traces, enabling analysis, feedback, and coaching policies.</p>
-      <img src="site.baseurl/assets/images/project_detail/skill-representation.jpg" class="modal-image-responsive" alt="Skill representation concept">
+      <img src="site.baseurl/assets/images/project/skill-rep-process.png" class="modal-image-responsive" alt="Skill representation concept">
       <hr>
       <p><span style="font-weight: 300">[My role]</span><br>Co-author — framing, analysis, narrative</p>
     tags:
@@ -119,7 +119,7 @@ project:
     description: "Faster, more relevant streaming discovery for time-pressed users"
     detail: >-
       <p>UCSD app concept to <b>cut time-to-decision</b> for busy streamers. Designed flows and hi-fi prototype with a group of designers.: <b>Taste Curation</b> (quick preference quiz), <b>Randomizer</b> (one-tap play), <b>Tags search</b>, and <b>Saved-content filter</b>.</p>
-      <img src="site.baseurl/assets/images/project_detail/metime-home.jpg" class="modal-image-responsive" alt="MeTime home screen">
+      <img src="site.baseurl/assets/images/project_detail/metime-cover.jpg" class="modal-image-responsive" alt="MeTime home screen">
       <p style="text-align: center; font-weight: 300;">Home · Tags · Randomizer · Taste Curation</p>
       <hr>
       <p><span style="font-weight: 300">[My role]</span><br>Co-designer — research, IA, flows, hi-fi prototype</p>
