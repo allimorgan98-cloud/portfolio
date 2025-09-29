@@ -119,7 +119,7 @@ project:
     description: "Faster, more relevant streaming discovery for time-pressed users"
     detail: >-
       <p>UCSD app concept to <b>cut time-to-decision</b> for busy streamers. Designed flows and hi-fi prototype with a group of designers.: <b>Taste Curation</b> (quick preference quiz), <b>Randomizer</b> (one-tap play), <b>Tags search</b>, and <b>Saved-content filter</b>.</p>
-      <img src="site.baseurl/assets/images/project/metime-cover.jpg" class="modal-image-responsive" alt="MeTime home screen">
+      <img src="site.baseurl/assets/images/project/metime-cover.png" class="modal-image-responsive" alt="MeTime home screen">
       <p style="text-align: center; font-weight: 300;">Home · Tags · Randomizer · Taste Curation</p>
       <hr>
       <p><span style="font-weight: 300">[My role]</span><br>Co-designer — research, IA, flows, hi-fi prototype</p>
