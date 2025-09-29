@@ -23,7 +23,7 @@ project:
     description: "Time-synced multimodal capture and user-centered evaluation for IL"
     detail: >-
       <p>Built reliable <b>capture and evaluation pipelines</b> supporting multi-task imitation learning for driving skills. Standardized time-sync across simulator I/O, eye-tracking, and physio; defined user-centered success metrics in partnership with engineering.</p>
-      <img src="site.baseurl/assets/images/project_detail/icra-mtil.jpg" class="modal-image-responsive" alt="ICRA project schematic">
+      <img src="site.baseurl/assets/images/icra-mtil.png" class="modal-image-responsive" alt="ICRA project schematic">
       <hr>
       <p><span style="font-weight: 300">[My role]</span><br>UXR &amp; data quality lead — instrumentation, metrics, analysis</p>
     tags:
@@ -39,7 +39,7 @@ project:
     description: "Structuring complex skills with hierarchical decomposition"
     detail: >-
       <p>Studied <b>hierarchical task decomposition</b> to structure learning of complex performance-driving behaviors; informed training sequence and evaluation measures for coaching.</p>
-      <img src="site.baseurl/assets/images/project_detail/acc-task-decomp.jpg" class="modal-image-responsive" alt="Task decomposition concept">
+      <img src="site.baseurl/assets/images/project/acc-decomp.png" class="modal-image-responsive" alt="Task decomposition concept">
       <hr>
       <p><span style="font-weight: 300">[My role]</span><br>Study design &amp; analysis — protocol, metrics, synthesis</p>
     tags:
@@ -55,7 +55,7 @@ project:
     description: "Does simulated low-μ improve drift training and transfer?"
     detail: >-
       <p>Evaluated simulated low-friction (<b>low-μ</b>) environments for drift training; analyzed learning and transfer in a controlled simulator study and informed HMI safety cues.</p>
-      <img src="site.baseurl/assets/images/project_detail/low-mu-drift.jpg" class="modal-image-responsive" alt="Low-μ drift training">
+      <img src="site.baseurl/assets/images/project/low-mu-drift-process.png" class="modal-image-responsive" alt="Low-μ drift training">
       <hr>
       <p><span style="font-weight: 300">[My role]</span><br>Study design, instrumentation, data analysis</p>
     tags:
