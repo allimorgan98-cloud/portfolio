@@ -22,7 +22,7 @@ project:
     detail: >
       <p>Built reliable <b>capture and evaluation pipelines</b> supporting multi-task imitation learning for driving skills. Standardized time-sync across simulator I/O, eye-tracking, and physio; defined user-centered success metrics in partnership with engineering.</p>
 
-      <img src='site.baseurl/assets/images/project_detail/icra-mtil.jpg' class='modal-image-responsive' alt='ICRA project schematic'>
+      <img src='site.baseurl/assets/images/project/icra-mtil.png' class='modal-image-responsive' alt='ICRA project schematic'>
 
       <hr>
 
@@ -40,7 +40,7 @@ project:
     detail: >
       <p>Studied <b>hierarchical task decomposition</b> to structure learning of complex performance-driving behaviors; informed training sequence and evaluation measures for coaching.</p>
 
-      <img src='site.baseurl/assets/images/project_detail/acc-task-decomp.jpg' class='modal-image-responsive' alt='Task decomposition concept'>
+      <img src='site.baseurl/assets/images/project/acc-decomp.png' class='modal-image-responsive' alt='Task decomposition concept'>
 
       <hr>
 
@@ -58,7 +58,7 @@ project:
     detail: >
       <p>Evaluated simulated low-friction (<b>low-μ</b>) environments for drift training; analyzed learning and transfer in a controlled simulator study and informed HMI safety cues.</p>
 
-      <img src='site.baseurl/assets/images/project_detail/low-mu-drift.jpg' class='modal-image-responsive' alt='Low-mu drift training'>
+      <img src='site.baseurl/assets/images/project/low-mu-drift-process.png' class='modal-image-responsive' alt='Low-mu drift training'>
 
       <hr>
 
@@ -76,7 +76,7 @@ project:
     detail: >
       <p>Linked inferred <b>cognitive factors</b> to driving outcomes to personalize safety HMI. Contributed to mixed-methods analysis and measurable interface recommendations.</p>
 
-      <img src='site.baseurl/assets/images/project_detail/cognitive-factors.jpg' class='modal-image-responsive' alt='Personalization framework'>
+      <img src='site.baseurl/assets/images/project/personalizing-driver-safety-2024.png' class='modal-image-responsive' alt='Personalization framework'>
 
       <hr>
 
@@ -94,7 +94,7 @@ project:
     detail: >
       <p>Simulation framework modeling <b>driver behaviors and preferences</b> to test human–AI teaming strategies and HMI interventions.</p>
 
-      <img src='site.baseurl/assets/images/project_detail/hmiway-env.jpg' class='modal-image-responsive' alt='HMIway-env schematic'>
+      <img src='site.baseurl/assets/images/project/hmi-env-proces.png' class='modal-image-responsive' alt='HMIway-env schematic'>
 
       <hr>
 
@@ -112,7 +112,7 @@ project:
     detail: >
       <p>Proposed a <b>data-driven schema</b> to represent driving skills from multimodal traces, enabling analysis, feedback, and coaching policies.</p>
 
-      <img src='site.baseurl/assets/images/project_detail/skill-representation.jpg' class='modal-image-responsive' alt='Skill representation concept'>
+      <img src='site.baseurl/assets/images/project/skill-rep-process.png' class='modal-image-responsive' alt='Skill representation concept'>
 
       <hr>
 
@@ -130,7 +130,7 @@ project:
     detail: >
       <p>UCSD app concept to <b>cut time-to-decision</b> for busy streamers. Designed flows and hi-fi prototype with a team of designers: <b>Taste Curation</b> (quick preference quiz), <b>Randomizer</b> (one-tap play), <b>Tags search</b>, and <b>Saved-content filter</b>.</p>
 
-      <img src='site.baseurl/assets/images/project_detail/metime-home.jpg' class='modal-image-responsive' alt='MeTime home screen'>
+      <img src='site.baseurl/assets/images/project/metime-cover.jpg' class='modal-image-responsive' alt='MeTime home screen'>
 
       <p style='text-align: center; font-weight: 300;'>Home · Tags · Randomizer · Taste Curation</p>
 
