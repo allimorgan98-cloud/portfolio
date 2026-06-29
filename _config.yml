@@ -1,21 +1,35 @@
 url: "https://allimorgan98-cloud.github.io"
-baseurl: "/portfolio"   # because your repo name is 'portfolio'
-
+baseurl: "/portfolio"
 title: "Allison Morgan"
-description: "UX / HMI Researcher"
+description: "UX / Human Factors Researcher"
 author:
   name: "Allison Morgan"
   email: "allimorgan98@gmail.com"
   url: "https://allimorgan98-cloud.github.io/portfolio"
 
 plugins:
- - jekyll-feed
- - jekyll-seo-tag
- - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 collections:
   publication:
     output: true
     permalink: /publication/:slug/
+  case_studies:
+    output: true
+    permalink: /case-studies/:slug/
+
+defaults:
+  - scope:
+      path: ""
+      type: "case_studies"
+    values:
+      layout: case-study
+  - scope:
+      path: ""
+      type: "publication"
+    values:
+      layout: publication
 
 theme: minima
