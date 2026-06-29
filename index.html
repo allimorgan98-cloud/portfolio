@@ -3,56 +3,146 @@ layout: default
 title: Allison Morgan
 description: UX Researcher
 ---
-<link rel="stylesheet" href="{{ '/assets/css/case-study.css' | relative_url }}">
 
-<section class="home-hero">
-  <p class="eyebrow">UX Researcher · Human Factors · Human-AI Interaction</p>
-  <h1>I study how people understand, trust, and use complex technologies.</h1>
-  <p>I’m a mixed-methods UX and Human Factors researcher with experience running human-subjects studies across lab, simulator, field, and remote settings. My work combines qualitative research with behavioral, performance, and multimodal data to help teams make human-centered product decisions.</p>
-  <div class="hero-actions">
-    <a class="button-link" href="{{ '/case-studies/' | relative_url }}">View case studies</a>
-    <a class="button-link secondary" href="{{ '/cv/' | relative_url }}">View CV</a>
-  </div>
-</section>
+{% assign projects = site.data.project-main.project %}
+{% assign thumb_dir = '/assets/images/project/' %}
+<style>
+  .section-title{font-weight:600;margin:.25rem 0 1rem;}
+  .home-project-scroller{overflow:hidden;position:relative}
+  .home-project-scroller-inner{display:flex;gap:1rem;width:max-content}
+  .home-project-scroller[data-animated] .home-project-scroller-inner{animation:home-scroll 45s linear infinite}
+  @keyframes home-scroll{to{transform:translateX(calc(-50% - .5rem))}}
+  .home-project-link{display:block;width:220px;flex:0 0 auto;text-decoration:none;color:inherit}
+  .home-project-container{border:1px solid #eee;border-radius:12px;padding:12px;background:var(--bs-body-bg,#fff)}
+  .home-project-venue{margin-left:.4rem;color:#666;font-weight:400}
+  .home-view-all{font-weight:600;text-decoration:none}
+  .debug-url{display:block;font-size:.75rem;color:#888;margin-top:.25rem;word-break:break-all}
+  @media (max-width:576px){.home-project-link{width:180px}}
+</style>
 
-<section class="topic-band" aria-label="Research focus areas">
-  <div>
-    <h2>Human-AI interaction</h2>
-    <p>Evaluating conversational AI, shared autonomy, and feedback systems.</p>
-  </div>
-  <div>
-    <h2>Healthcare & accessibility</h2>
-    <p>Researching patient, caregiver, and clinician needs for digital health tools.</p>
-  </div>
-  <div>
-    <h2>Safety-critical systems</h2>
-    <p>Studying interfaces where trust, workload, and decision-making matter.</p>
-  </div>
-</section>
+<div class="container pt-3 pb-4">
+  <div class="container vertical-center">
+    <div class="row">
+      <!-- TEXT COLUMN -->
+      <div class="col-12 col-md-8 col-xxl-9 px-0 align-self-center">
+        <h4>Allison Morgan</h4>
 
-<section class="section-heading-row">
-  <div>
-    <p class="eyebrow">Selected Work</p>
-    <h2>Featured case studies</h2>
-  </div>
-  <a href="{{ '/case-studies/' | relative_url }}">View all →</a>
-</section>
-
-<section class="case-card-grid featured-grid">
-  {% assign studies = site.case_studies | sort: 'order' %}
-  {% for study in studies limit: 3 %}
-    <a class="case-card" href="{{ study.url | relative_url }}">
-      {% if study.thumbnail %}<img src="{{ study.thumbnail | relative_url }}" alt="{{ study.thumbnail_alt | default: study.title }}">{% endif %}
-      <div class="case-card-body">
-        <p class="eyebrow">{{ study.category | default: 'Case Study' }}</p>
-        <h2>{{ study.title }}</h2>
-        <p>{{ study.card_summary | default: study.summary }}</p>
-        {% if study.tags %}
-          <div class="tag-row">
-            {% for tag in study.tags limit: 3 %}<span>{{ tag }}</span>{% endfor %}
-          </div>
-        {% endif %}
+        <p class="mt-3">
+          I’m a UX &amp; Human Factors researcher who plans and runs end-to-end human-subjects studies across lab, field, and remote settings. I combine qualitative methods with multimodal data (eye-tracking, wearables/physiology, XR) to turn complex signals into clear, decision-ready insights for interfaces and products.
+        </p>
+        <p>
+          I partner closely with design, product, and engineering to scope research questions, build reliable ops and instrumentation pipelines (recruiting, IRB, QA, data governance), and deliver findings that improve usability, safety, and overall experience.
+        </p>
+        <p>
+          I earned my B.S. in Cognitive &amp; Behavioral Neuroscience from
+          <a href="https://ucsd.edu">UC San Diego</a>. I’m focused on inclusive design, hardware evaluation, and responsible AI with demonstrated impact in real settings.
+        </p>
       </div>
+
+      <!-- IMAGE COLUMN -->
+      <div class="col-12 col-md-4 col-xxl-3 align-self-center text-center">
+        <img
+          src="{{ '/assets/images/project/alli.jpeg' | relative_url }}"
+          alt="Headshot of Allison Morgan"
+          class="w-100"
+          style="max-width:225px;"
+          loading="lazy"
+        >
+      </div>
+    </div>
+  </div>
+
+  <p class="mt-3">
+    <a href="#" class="cryptedmail"
+       data-name="allimorgan98" data-domain="gmail" data-tld="com"
+       onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld; return false;">
+      <i class="fa-solid fa-envelope pe-1"></i>
     </a>
-  {% endfor %}
-</section>
+  </p>
+</div>
+
+<!-- ===== Recent projects ===== -->
+<div class="container">
+  <p class="section-title">Recent projects</p>
+
+  {% assign projects = site.data.project-main.project %}
+  {% assign thumb_dir = '/assets/images/project/' %}
+
+  {% if projects and projects.size > 0 %}
+    <div class="home-project-scroller" data-animated>
+      <div class="home-project-scroller-inner">
+
+        {% for project in projects %}
+          {%- comment -%} Resolve slug from data or /publication/<slug> URL {%- endcomment -%}
+          {% assign pub_slug = project.slug %}
+          {% if pub_slug == nil and project.url and project.url contains '/publication/' %}
+            {% assign pub_slug = project.url | split: '/publication/' | last | split: '/' | first %}
+          {% endif %}
+
+          {%- comment -%} Find publication doc {%- endcomment -%}
+          {% assign doc = nil %}
+          {% if pub_slug %}
+            {% assign doc = site.publication | where: "slug", pub_slug | first %}
+          {% endif %}
+
+          {%- comment -%} Build href (absolute URLs untouched) {%- endcomment -%}
+          {% assign href = project.url %}
+          {% unless href %}
+            {% assign href = pub_slug | prepend: 'publication/' %}
+          {% endunless %}
+
+          {%- comment -%} Resolve image path {%- endcomment -%}
+          {% if project.image %}
+            {% assign img_path = thumb_dir | append: project.image %}
+          {% elsif doc and doc.hero %}
+            {% assign img_path = doc.hero %}
+            {% unless img_path contains '/' or img_path contains '://' %}
+              {% assign img_path = thumb_dir | append: img_path %}
+            {% endunless %}
+          {% elsif pub_slug %}
+            {% assign img_path = thumb_dir | append: pub_slug | append: '.jpg' %}
+          {% else %}
+            {% assign img_path = thumb_dir | append: 'placeholder.jpg' %}
+          {% endif %}
+          {% assign img_path = img_path | relative_url %}
+
+          {%- comment -%} Tags / categories (arrays expected) {%- endcomment -%}
+          {% assign tags = project.tags %}
+          {% if tags == nil and doc %}
+            {% assign tags = doc.category | default: doc.categories | default: doc.tags %}
+          {% endif %}
+
+          {%- comment -%} Titles without nested parentheses in filters {%- endcomment -%}
+          {% assign card_title = project.title | default: doc.title %}
+          {% unless card_title %}{% assign card_title = 'Project' %}{% endunless %}
+          {% assign venue = project.venue | default: doc.venue %}
+
+          <a href="{% if href and href contains '://' %}{{ href }}{% else %}{{ href | relative_url }}{% endif %}" class="home-project-link">
+            <div class="home-project-container non-select">
+              <img src="{{ img_path }}" alt="{{ card_title }}" style="height:auto;width:100%;" loading="lazy"
+                   onerror="this.onerror=null;this.src='{{ thumb_dir | append: 'placeholder.jpg' | relative_url }}';">
+              <p class="pt-2 mt-md-2 text-center" style="font-size:.8rem;">
+                {{ card_title }}{% if venue %}<span class="home-project-venue">{{ venue }}</span>{% endif %}
+              </p>
+
+              {% if tags and tags.size > 0 %}
+                <div class="home-project-tags">
+                  {% for tag in tags %}
+                    <span class="home-tag">{{ tag }}</span>
+                  {% endfor %}
+                </div>
+              {% endif %}
+            </div>
+          </a>
+        {% endfor %}
+
+      </div>
+    </div>
+  {% else %}
+    <p class="text-muted">No projects found. Check <code>_data/project-main.yml</code> (key: <code>project:</code>) and your <code>_publication/</code> slugs.</p>
+  {% endif %}
+
+  <div class="d-flex flex-row-reverse mt-4">
+    <a href="{{ '/project/' | relative_url }}" class="home-view-all">&gt; View All</a>
+  </div>
+</div>
