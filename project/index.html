@@ -1,64 +1,154 @@
 ---
 layout: default
-title: Project
+title: Case Studies
 permalink: /project/
-description: Projects of Allison Morgan
+description: UX research case studies by Allison Morgan
 ---
 
 {% assign projects = site.data.project.project %}
+{% assign thumb_dir = '/assets/images/project/' %}
 
-<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+<style>
+  .project-page {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
 
-<div class="container py-4">
-    <p class="section-title">Project</p>
-    <div class="row mt-3 g-3 grid">
-        {% for proj in projects %}
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 grid-item">
-            <div class="project-item-container" data-bs-toggle="modal" data-bs-target="#modal{{ forloop.index }}">
-                <img class="project-item-image" src="{{ proj.image | prepend: '/assets/images/project/' | relative_url }}">
-                <div class="project-item-container-inner">
-                    <p class="project-item-title">{{ proj.title }}</p>
-                    <p class="project-item-description">{{ proj.description }}</p>
-                    <div class="project-item-tags">
-                      <p>
-                        {% for tag in proj.tags %}
-                        <a title="" href="">{{ tag }}</a>
-                        {% endfor %}
-                      </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="modal{{ forloop.index }}" tabindex="-1" aria-labelledby="exampleModal{{ forloop.index }}" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <div class="modal-header">
-                    <div style="display: block !important">
-                        <h5 class="modal-title" id="exampleModalLabel">{{ proj.title }}</h5>
-                        <p class="modal-description">{{ proj.description }}</p>
-                        <p class="modal-link">{% if proj.paper %}<a href="{% if proj.paper contains 'http' %} {{ proj.paper }} {% else %} /assets/pdf/{{ proj.paper }} {% endif %}"><i class="fas fa-book"></i>&nbsp; Paper</a> &nbsp;&nbsp;&nbsp; {% endif %}{% if proj.video %}<a href="{{ proj.video }}"><i class="fas fa-play"></i>&nbsp; Video</a> &nbsp;&nbsp;&nbsp; {% endif %}{% if proj.slide %}<a href="/assets/pdf/{{ proj.slide }}"><i class="fas fa-poll-h"></i>&nbsp; Slide</a> &nbsp;&nbsp;&nbsp; {% endif %}{% if proj.appstore %}<a href="{{ proj.appstore }}"><i class="fab fa-app-store-ios"></i>&nbsp; App Store</a> &nbsp;&nbsp;&nbsp; {% endif %}{% if proj.code %}<a href="{{ proj.code }}"><i class="fab fa-github"></i>&nbsp; Code</a> &nbsp;&nbsp;&nbsp; {% endif %}{% if proj.link %}<a href="{{ proj.link }}"><i class="fas fa-external-link"></i>&nbsp; Link</a>{% endif %}</p>
-                    </div>
-                    <button type="button" class="btn-close invert-on-dark" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    {{ proj.detail | replace: 'site.baseurl', site.baseurl }}
-                </div>
+  .project-page h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .project-intro {
+    max-width: 760px;
+    margin-bottom: 2rem;
+    line-height: 1.7;
+  }
+
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+  }
+
+  .project-card {
+    display: block;
+    border: 1px solid #e6e6e6;
+    border-radius: 14px;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background: #fff;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  .project-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    text-decoration: none;
+  }
+
+  .project-card img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    display: block;
+    background: #f5f5f5;
+  }
+
+  .project-card-body {
+    padding: 1rem;
+  }
+
+  .project-card h2 {
+    font-size: 1.05rem;
+    margin: 0 0 0.5rem;
+    line-height: 1.3;
+  }
+
+  .project-card p {
+    font-size: 0.95rem;
+    line-height: 1.55;
+    margin-bottom: 0.75rem;
+  }
+
+  .tag-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    margin-top: 0.75rem;
+  }
+
+  .tag-row span {
+    font-size: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 999px;
+    padding: 0.2rem 0.5rem;
+    color: #555;
+  }
+
+  .card-cta {
+    display: inline-block;
+    margin-top: 0.65rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+</style>
+
+<div class="project-page">
+
+  <h1>Case Studies</h1>
+
+  <p class="project-intro">
+    A selection of UX research, human factors, and human-AI interaction projects focused on translating complex systems into clearer, more usable, and more actionable experiences. Several of these case studies are based on peer-reviewed publications, but are reframed here around the research process, user problem, findings, and design implications.
+  </p>
+
+  {% if projects and projects.size > 0 %}
+    <div class="project-grid">
+      {% for proj in projects %}
+
+        {% if proj.url %}
+          {% assign href = proj.url %}
+        {% else %}
+          {% assign href = '/project/' | append: proj.id | append: '/' %}
+        {% endif %}
+
+        {% if href contains '://' %}
+          {% assign final_href = href %}
+        {% else %}
+          {% assign final_href = href | relative_url %}
+        {% endif %}
+
+        {% if proj.image %}
+          {% assign img_path = thumb_dir | append: proj.image | relative_url %}
+        {% else %}
+          {% assign img_path = thumb_dir | append: 'placeholder.jpg' | relative_url %}
+        {% endif %}
+
+        <a class="project-card" href="{{ final_href }}">
+          <img src="{{ img_path }}" alt="{{ proj.title }}">
+          <div class="project-card-body">
+            <h2>{{ proj.title }}</h2>
+            <p>{{ proj.description }}</p>
+
+            {% if proj.tags %}
+              <div class="tag-row">
+                {% for tag in proj.tags limit: 3 %}
+                  <span>{{ tag }}</span>
+                {% endfor %}
               </div>
-            </div>
-        </div>
-        {% endfor %}
+            {% endif %}
+
+            <span class="card-cta">View case study →</span>
+          </div>
+        </a>
+
+      {% endfor %}
     </div>
+  {% else %}
+    <p>No projects found. Check <code>_data/project.yml</code> and make sure it includes the key <code>project:</code>.</p>
+  {% endif %}
+
 </div>
-
-<script>
-    var grid = document.querySelector('.grid');
-    var msnry = new Masonry( grid, {
-        percentPosition: true,
-        itemSelector: '.grid-item'
-    });
-    imagesLoaded( grid ).on( 'progress', function() {
-        msnry.layout();
-    });
-
-</script>
