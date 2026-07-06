@@ -7,16 +7,17 @@
       <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
         <ul class="navbar-nav ms-auto mt-4 mt-lg-0 navbar-nav-scroll">
           <li class="nav-item">
-            <a class="nav-link{% if page.url == '/' %} active{% endif %}" href="{{ '/' | relative_url }}">Home</a>
+            <a class="nav-link{% if page.url == '/' %} active{% endif %}" href="{{ '/' | relative_url }}">About</a>
+          </li>
+            <li class="nav-item">
+            <a class="nav-link{% if page.url contains '/project/' %} active{% endif %}" href="{{ '/project/' | relative_url }}">Portfolio</a>
           </li>
           <li class="nav-item">
             <a class="nav-link{% if page.url contains '/publication/' %} active{% endif %}" href="{{ '/publication/' | relative_url }}">Publication</a>
           </li>
+       
           <li class="nav-item">
-            <a class="nav-link{% if page.url contains '/project/' %} active{% endif %}" href="{{ '/project/' | relative_url }}">Project</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link{% if page.url contains '/cv/' %} active{% endif %}" href="{{ '/cv/' | relative_url }}">CV</a>
+            <a class="nav-link{% if page.url contains '/cv/' %} active{% endif %}" href="{{ '/cv/' | relative_url }}">Resume</a>
           </li>
           <!--
           <li class="nav-item">
